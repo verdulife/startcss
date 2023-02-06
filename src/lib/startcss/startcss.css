@@ -1,0 +1,12 @@
+/* BASE */
+@import './layout/layout.css';
+@import './theme/theme.css';
+@import './_reset.css';
+
+/* FONTS */
+@import './fonts/inter-variable.css';
+
+/* CONFIG */
+:root {
+	font-family: 'Inter';
+}

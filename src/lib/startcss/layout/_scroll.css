@@ -1,0 +1,45 @@
+.scroll {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.scroll.snap {
+  scroll-snap-type: y mandatory;
+
+  & > * {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  display: block;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.slider > .slide {
+  display: inline-flex;
+  white-space: normal;
+}
+.slider.snap {
+  scroll-snap-type: x mandatory;
+}
+.slider.snap > .slide {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}

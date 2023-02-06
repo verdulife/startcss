@@ -1,0 +1,10 @@
+.xdiv {
+  width: 100%;
+  height: 1px;
+  display: flex;
+}
+.ydiv {
+  width: 1px;
+  height: 100%;
+  display: flex;
+}
