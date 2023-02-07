@@ -1,33 +1,69 @@
+@import '../theme/_breakpoints.css';
+
 .row {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 .row.reverse {
-  display: flex;
-  flex-flow: row-reverse wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+	display: flex;
+	flex-flow: row-reverse wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 .nowrap {
-  flex-wrap: nowrap;
-  overflow: hidden;
+	flex-wrap: nowrap;
+	overflow: hidden;
 }
-
 
 .col {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 .col.reverse {
-  display: flex;
-  flex-flow: column-reverse nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+	display: flex;
+	flex-flow: column-reverse nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 .wrap {
-  flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+@media (--sm) {
+	.sm\:row {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.sm\:row.sm\:reverse {
+		display: flex;
+		flex-flow: row-reverse wrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.sm\:nowrap {
+		flex-wrap: nowrap;
+		overflow: hidden;
+	}
+
+	.sm\:col {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.sm\:col.sm\:reverse {
+		display: flex;
+		flex-flow: column-reverse nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.sm\:wrap {
+		flex-wrap: wrap;
+	}
 }
