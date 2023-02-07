@@ -1,3 +1,6 @@
+/* BREAKPORINTS */
+@import './_breakpoints.css';
+
 /* BASE */
 @import './layout/layout.css';
 @import './theme/theme.css';

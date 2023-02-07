@@ -1,10 +1,75 @@
 .xdiv {
-  width: 100%;
-  height: 1px;
-  display: flex;
+	width: 100%;
+	height: 1px;
+	display: flex;
 }
 .ydiv {
-  width: 1px;
-  height: 100%;
-  display: flex;
+	width: 1px;
+	height: 100%;
+	display: flex;
+}
+
+@media (--sm) {
+	.xdiv\@sm {
+		width: 100%;
+		height: 1px;
+		display: flex;
+	}
+	.ydiv\@sm {
+		width: 1px;
+		height: 100%;
+		display: flex;
+	}
+}
+
+@media (--md) {
+	.xdiv\@md {
+		width: 100%;
+		height: 1px;
+		display: flex;
+	}
+	.ydiv\@md {
+		width: 1px;
+		height: 100%;
+		display: flex;
+	}
+}
+
+@media (--lg) {
+	.xdiv\@lg {
+		width: 100%;
+		height: 1px;
+		display: flex;
+	}
+	.ydiv\@lg {
+		width: 1px;
+		height: 100%;
+		display: flex;
+	}
+}
+
+@media (--xl) {
+	.xdiv\@xl {
+		width: 100%;
+		height: 1px;
+		display: flex;
+	}
+	.ydiv\@xl {
+		width: 1px;
+		height: 100%;
+		display: flex;
+	}
+}
+
+@media (--xxl) {
+	.xdiv\@xxl {
+		width: 100%;
+		height: 1px;
+		display: flex;
+	}
+	.ydiv\@xxl {
+		width: 1px;
+		height: 100%;
+		display: flex;
+	}
 }

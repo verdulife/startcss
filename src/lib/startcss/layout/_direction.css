@@ -1,20 +1,14 @@
-@import '../theme/_breakpoints.css';
-
 .row {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	justify-content: flex-start;
 	align-items: flex-start;
 }
-.row.reverse {
+.row-reverse {
 	display: flex;
-	flex-flow: row-reverse wrap;
+	flex-flow: row-reverse nowrap;
 	justify-content: flex-start;
 	align-items: flex-start;
-}
-.nowrap {
-	flex-wrap: nowrap;
-	overflow: hidden;
 }
 
 .col {
@@ -23,47 +17,197 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 }
-.col.reverse {
+.col-reverse {
 	display: flex;
 	flex-flow: column-reverse nowrap;
 	justify-content: flex-start;
 	align-items: flex-start;
+}
+
+.nowrap {
+	flex-wrap: nowrap;
+	overflow: hidden;
 }
 .wrap {
 	flex-wrap: wrap;
 }
 
 @media (--sm) {
-	.sm\:row {
+	.row\@sm {
 		display: flex;
-		flex-flow: row wrap;
+		flex-flow: row nowrap;
 		justify-content: flex-start;
 		align-items: flex-start;
 	}
-	.sm\:row.sm\:reverse {
+	.row-reverse\@sm {
 		display: flex;
-		flex-flow: row-reverse wrap;
+		flex-flow: row-reverse nowrap;
 		justify-content: flex-start;
 		align-items: flex-start;
-	}
-	.sm\:nowrap {
-		flex-wrap: nowrap;
-		overflow: hidden;
 	}
 
-	.sm\:col {
+	.col\@sm {
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: flex-start;
 		align-items: flex-start;
 	}
-	.sm\:col.sm\:reverse {
+	.col-reverse\@sm {
 		display: flex;
 		flex-flow: column-reverse nowrap;
 		justify-content: flex-start;
 		align-items: flex-start;
 	}
-	.sm\:wrap {
+
+	.nowrap\@sm {
+		flex-wrap: nowrap;
+		overflow: hidden;
+	}
+	.wrap\@sm {
+		flex-wrap: wrap;
+	}
+}
+
+@media (--md) {
+	.row\@md {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.row-reverse\@md {
+		display: flex;
+		flex-flow: row-reverse nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.col\@md {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.col-reverse\@md {
+		display: flex;
+		flex-flow: column-reverse nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.nowrap\@md {
+		flex-wrap: nowrap;
+		overflow: hidden;
+	}
+	.wrap\@md {
+		flex-wrap: wrap;
+	}
+}
+
+@media (--lg) {
+	.row\@lg {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.row-reverse\@lg {
+		display: flex;
+		flex-flow: row-reverse nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.col\@lg {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.col-reverse\@lg {
+		display: flex;
+		flex-flow: column-reverse nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.nowrap\@lg {
+		flex-wrap: nowrap;
+		overflow: hidden;
+	}
+	.wrap\@lg {
+		flex-wrap: wrap;
+	}
+}
+
+@media (--xl) {
+	.row\@xl {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.row-reverse\@xl {
+		display: flex;
+		flex-flow: row-reverse nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.col\@xl {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.col-reverse\@xl {
+		display: flex;
+		flex-flow: column-reverse nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.nowrap\@xl {
+		flex-wrap: nowrap;
+		overflow: hidden;
+	}
+	.wrap\@xl {
+		flex-wrap: wrap;
+	}
+}
+
+@media (--xxl) {
+	.row\@xxl {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.row-reverse\@xxl {
+		display: flex;
+		flex-flow: row-reverse nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.col\@xxl {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.col-reverse\@xxl {
+		display: flex;
+		flex-flow: column-reverse nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.nowrap\@xxl {
+		flex-wrap: nowrap;
+		overflow: hidden;
+	}
+	.wrap\@xxl {
 		flex-wrap: wrap;
 	}
 }

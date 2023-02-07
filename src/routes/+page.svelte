@@ -3,7 +3,7 @@
 </script>
 
 <section class="col acenter xfill">
-	<article class="row sm:col xfill">
+	<article class="row col@sm xfill">
 		<picture>
 			<Image src="/mobile.png" width="100px" height="100px" alt="Verdu" />
 		</picture>

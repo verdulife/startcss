@@ -61,3 +61,333 @@
 .sstretch {
 	align-self: stretch;
 }
+
+@media (--sm) {
+	.jstart\@sm {
+		justify-content: flex-start;
+	}
+	.jend\@sm {
+		justify-content: flex-end;
+	}
+	.jcenter\@sm {
+		justify-content: center;
+	}
+	.jbetween\@sm {
+		justify-content: space-between;
+	}
+	.jaround\@sm {
+		justify-content: space-around;
+	}
+	.jevenly\@sm {
+		justify-content: space-evenly;
+	}
+
+	.astart\@sm {
+		align-items: flex-start;
+	}
+	.aend\@sm {
+		align-items: flex-end;
+	}
+	.acenter\@sm {
+		align-items: center;
+	}
+	.abase\@sm {
+		align-items: baseline;
+	}
+	.astretch\@sm {
+		align-items: stretch;
+	}
+
+	.fstart\@sm {
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.fend\@sm {
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+	.fcenter\@sm {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.sstart\@sm {
+		align-self: flex-start;
+	}
+	.send\@sm {
+		align-self: flex-end;
+	}
+	.scenter\@sm {
+		align-self: center;
+	}
+	.sbase\@sm {
+		align-self: baseline;
+	}
+	.sstretch\@sm {
+		align-self: stretch;
+	}
+}
+
+@media (--md) {
+	.jstart\@md {
+		justify-content: flex-start;
+	}
+	.jend\@md {
+		justify-content: flex-end;
+	}
+	.jcenter\@md {
+		justify-content: center;
+	}
+	.jbetween\@md {
+		justify-content: space-between;
+	}
+	.jaround\@md {
+		justify-content: space-around;
+	}
+	.jevenly\@md {
+		justify-content: space-evenly;
+	}
+
+	.astart\@md {
+		align-items: flex-start;
+	}
+	.aend\@md {
+		align-items: flex-end;
+	}
+	.acenter\@md {
+		align-items: center;
+	}
+	.abase\@md {
+		align-items: baseline;
+	}
+	.astretch\@md {
+		align-items: stretch;
+	}
+
+	.fstart\@md {
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.fend\@md {
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+	.fcenter\@md {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.sstart\@md {
+		align-self: flex-start;
+	}
+	.send\@md {
+		align-self: flex-end;
+	}
+	.scenter\@md {
+		align-self: center;
+	}
+	.sbase\@md {
+		align-self: baseline;
+	}
+	.sstretch\@md {
+		align-self: stretch;
+	}
+}
+
+@media (--lg) {
+	.jstart\@lg {
+		justify-content: flex-start;
+	}
+	.jend\@lg {
+		justify-content: flex-end;
+	}
+	.jcenter\@lg {
+		justify-content: center;
+	}
+	.jbetween\@lg {
+		justify-content: space-between;
+	}
+	.jaround\@lg {
+		justify-content: space-around;
+	}
+	.jevenly\@lg {
+		justify-content: space-evenly;
+	}
+
+	.astart\@lg {
+		align-items: flex-start;
+	}
+	.aend\@lg {
+		align-items: flex-end;
+	}
+	.acenter\@lg {
+		align-items: center;
+	}
+	.abase\@lg {
+		align-items: baseline;
+	}
+	.astretch\@lg {
+		align-items: stretch;
+	}
+
+	.fstart\@lg {
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.fend\@lg {
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+	.fcenter\@lg {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.sstart\@lg {
+		align-self: flex-start;
+	}
+	.send\@lg {
+		align-self: flex-end;
+	}
+	.scenter\@lg {
+		align-self: center;
+	}
+	.sbase\@lg {
+		align-self: baseline;
+	}
+	.sstretch\@lg {
+		align-self: stretch;
+	}
+}
+
+@media (--xl) {
+	.jstart\@xl {
+		justify-content: flex-start;
+	}
+	.jend\@xl {
+		justify-content: flex-end;
+	}
+	.jcenter\@xl {
+		justify-content: center;
+	}
+	.jbetween\@xl {
+		justify-content: space-between;
+	}
+	.jaround\@xl {
+		justify-content: space-around;
+	}
+	.jevenly\@xl {
+		justify-content: space-evenly;
+	}
+
+	.astart\@xl {
+		align-items: flex-start;
+	}
+	.aend\@xl {
+		align-items: flex-end;
+	}
+	.acenter\@xl {
+		align-items: center;
+	}
+	.abase\@xl {
+		align-items: baseline;
+	}
+	.astretch\@xl {
+		align-items: stretch;
+	}
+
+	.fstart\@xl {
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.fend\@xl {
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+	.fcenter\@xl {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.sstart\@xl {
+		align-self: flex-start;
+	}
+	.send\@xl {
+		align-self: flex-end;
+	}
+	.scenter\@xl {
+		align-self: center;
+	}
+	.sbase\@xl {
+		align-self: baseline;
+	}
+	.sstretch\@xl {
+		align-self: stretch;
+	}
+}
+
+@media (--xxl) {
+	.jstart\@xxl {
+		justify-content: flex-start;
+	}
+	.jend\@xxl {
+		justify-content: flex-end;
+	}
+	.jcenter\@xxl {
+		justify-content: center;
+	}
+	.jbetween\@xxl {
+		justify-content: space-between;
+	}
+	.jaround\@xxl {
+		justify-content: space-around;
+	}
+	.jevenly\@xxl {
+		justify-content: space-evenly;
+	}
+
+	.astart\@xxl {
+		align-items: flex-start;
+	}
+	.aend\@xxl {
+		align-items: flex-end;
+	}
+	.acenter\@xxl {
+		align-items: center;
+	}
+	.abase\@xxl {
+		align-items: baseline;
+	}
+	.astretch\@xxl {
+		align-items: stretch;
+	}
+
+	.fstart\@xxl {
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.fend\@xxl {
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+	.fcenter\@xxl {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.sstart\@xxl {
+		align-self: flex-start;
+	}
+	.send\@xxl {
+		align-self: flex-end;
+	}
+	.scenter\@xxl {
+		align-self: center;
+	}
+	.sbase\@xxl {
+		align-self: baseline;
+	}
+	.sstretch\@xxl {
+		align-self: stretch;
+	}
+}

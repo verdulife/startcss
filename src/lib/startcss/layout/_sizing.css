@@ -1,3 +1,10 @@
+.xauto {
+  width: auto;
+}
+.yauto {
+  height: auto;
+}
+
 .xfill {
   width: 100%;
 }
