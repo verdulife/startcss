@@ -4,7 +4,7 @@
 /* BASE */
 @import './layout/layout.css';
 @import './theme/theme.css';
-@import './_reset.css';
+@import './reset/reset.css';
 
 /* FONTS */
 @import './fonts/inter-variable.css';

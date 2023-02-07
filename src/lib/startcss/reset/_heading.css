@@ -1,0 +1,59 @@
+/* 
+          __             __                
+    _____/ /_____ ______/ /________________
+   / ___/ __/ __ `/ ___/ __/ ___/ ___/ ___/
+  (__  ) /_/ /_/ / /  / /_/ /__(__  |__  ) 
+ /____/\__/\__,_/_/   \__/\___/____/____/  v0.0.1 
+
+*/
+
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+/* 🎨 custom properties 🎨 */
+
+:--heading {
+	--font: var(--font-inter);
+	--color: var(--base-900);
+	--weight: normal;
+	--strong-color: var(--accent);
+	--strong-weight: bold;
+	--h1: clamp(30px, 10vw, 80px);
+	--h2: clamp(26px, 7vw, 60px);
+	--h3: clamp(20px, 5vw, 36px);
+	--h4: clamp(16px, 4vw, 26px);
+	--h5: clamp(12px, 3vw, 16px);
+	--h6: clamp(10px, 2vw, 12px);
+}
+
+/* ⚡ startcss reset ⚡ */
+
+:--heading {
+	font-family: var(--font);
+	font-weight: var(--weight);
+	color: var(--color);
+
+	strong,
+	b {
+		font-weight: var(--strong-weight);
+		color: var(--strong-color);
+	}
+}
+
+h1 {
+	font-size: var(--h1);
+}
+h2 {
+	font-size: var(--h2);
+}
+h3 {
+	font-size: var(--h3);
+}
+h4 {
+	font-size: var(--h4);
+}
+h5 {
+	font-size: var(--h5);
+}
+h6 {
+	font-size: var(--h6);
+}

@@ -1,3 +1,14 @@
+/* 
+          __             __                
+    _____/ /_____ ______/ /________________
+   / ___/ __/ __ `/ ___/ __/ ___/ ___/ ___/
+  (__  ) /_/ /_/ / /  / /_/ /__(__  |__  ) 
+ /____/\__/\__,_/_/   \__/\___/____/____/  v0.0.1 
+
+*/
+
+/* ⚡ startcss reset ⚡ */
+
 *,
 *:before,
 *:after {
@@ -47,34 +58,6 @@ body {
 	}
 }
 
-p,
-a,
-label,
-input,
-select,
-textarea {
-	font-size: clamp(14px, 2em, 18px);
-}
-
-h1 {
-	font-size: clamp(30px, 10vw, 80px);
-}
-h2 {
-	font-size: clamp(26px, 7vw, 60px);
-}
-h3 {
-	font-size: clamp(20px, 5vw, 36px);
-}
-h4 {
-	font-size: clamp(16px, 4vw, 26px);
-}
-h5 {
-	font-size: clamp(12px, 3vw, 16px);
-}
-h6 {
-	font-size: clamp(10px, 2vw, 12px);
-}
-
 ul,
 li {
 	list-style: none;
@@ -87,43 +70,4 @@ table {
 
 textarea {
 	resize: none;
-}
-
-button {
-	cursor: pointer;
-	display: block;
-	background-color: unset;
-	text-align: center;
-	user-select: none;
-	-webkit-user-drag: none;
-	backface-visibility: hidden;
-	transition: 150ms;
-
-	&:disabled {
-		cursor: not-allowed;
-	}
-}
-
-input,
-select,
-textarea {
-	background-color: unset;
-	border-radius: 0;
-	transition: 150ms;
-
-	&:disabled {
-		cursor: not-allowed;
-	}
-}
-
-img,
-video {
-	object-fit: cover;
-	object-position: center;
-	user-select: none;
-	-webkit-user-drag: none;
-
-	&[icon] {
-		object-fit: contain;
-	}
 }

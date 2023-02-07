@@ -1,0 +1,122 @@
+/* 
+          __             __                
+    _____/ /_____ ______/ /________________
+   / ___/ __/ __ `/ ___/ __/ ___/ ___/ ___/
+  (__  ) /_/ /_/ / /  / /_/ /__(__  |__  ) 
+ /____/\__/\__,_/_/   \__/\___/____/____/  v0.0.1 
+
+*/
+
+@custom-selector :--button button, a.btn;
+
+/* 🎨 custom properties 🎨 */
+
+:--button {
+	--bg: var(--accent);
+	--color: var(--base-900);
+	--weight: bold;
+	--border-width: 0;
+	--border-style: solid;
+	--border-color: transparent;
+	--border-radius: 0.25em;
+	--padding: 1em 2em;
+}
+
+/* ⚡ startcss reset ⚡ */
+
+:--button {
+	cursor: pointer;
+	display: block;
+	background: var(--bg);
+	color: var(--color);
+	text-align: center;
+	border-radius: var(--border-radius);
+	user-select: none;
+	-webkit-user-drag: none;
+	padding: var(--padding);
+	transition: 150ms;
+
+	&:hover,
+	&:focus,
+	&:active {
+		filter: brightness(0.9);
+	}
+
+	&:disabled {
+		cursor: not-allowed;
+	}
+}
+
+:--button.outline {
+	background-color: transparent;
+}
+
+:--button.disabled {
+	cursor: not-allowed;
+	background-color: var(--c-neutral-500);
+	color: var(--c-neutral-700);
+	border-color: var(--c-neutral-500);
+}
+
+:--button.accent {
+	background-color: var(--c-accent);
+	color: var(--text-accent);
+	border-color: var(--c-accent);
+}
+:--button.alt {
+	background-color: var(--c-alt);
+	color: var(--text-alt);
+	border-color: var(--c-alt);
+}
+
+:--button.success {
+	background-color: var(--c-success);
+	color: var(--c-neutral);
+	border-color: var(--c-success);
+}
+:--button.warning {
+	background-color: var(--c-warning);
+	color: var(--c-neutral-900);
+	border-color: var(--c-warning);
+}
+:--button.error {
+	background-color: var(--c-error);
+	color: var(--c-neutral);
+	border-color: var(--c-error);
+}
+:--button.info {
+	background-color: var(--c-info);
+	color: var(--c-neutral);
+	border-color: var(--c-info);
+}
+
+:--button.accent.outline {
+	color: var(--c-accent);
+	border-color: var(--c-accent);
+}
+:--button.alt.outline {
+	color: var(--c-alt);
+	border-color: var(--c-alt);
+}
+
+:--button.success.outline {
+	color: var(--c-success);
+	border-color: var(--c-success);
+}
+:--button.warning.outline {
+	color: var(--c-warning);
+	border-color: var(--c-warning);
+}
+:--button.error.outline {
+	color: var(--c-error);
+	border-color: var(--c-error);
+}
+:--button.info.outline {
+	color: var(--c-info);
+	border-color: var(--c-info);
+}
+
+:--button.disabled.outline {
+	color: var(--c-neutral-500);
+	border-color: var(--c-neutral-500);
+}

@@ -1,0 +1,57 @@
+/* 
+          __             __                
+    _____/ /_____ ______/ /________________
+   / ___/ __/ __ `/ ___/ __/ ___/ ___/ ___/
+  (__  ) /_/ /_/ / /  / /_/ /__(__  |__  ) 
+ /____/\__/\__,_/_/   \__/\___/____/____/  v0.0.1 
+
+*/
+
+@custom-selector :--input input, select, textarea;
+
+/* 🎨 custom properties 🎨 */
+
+:--input {
+	--bg: var(--base);
+	--color: var(--base-900);
+	--weight: normal;
+	--border-width: 1px;
+	--border-style: solid;
+	--border-color: var(--base-100);
+	--border-radius: 0.25em;
+	--outline-width-focus: 0 0 2px 0;
+	--outline-style-focus: solid;
+	--outline-color-focus: var(--accent);
+	--padding: 1em 2em;
+	--placeholder-color: var(--base-400);
+	--placeholder-weight: normal;
+}
+
+/* ⚡ startcss reset ⚡ */
+
+:--input {
+	background: var(--bg);
+	border-width: var(--border-width);
+	border-style: var(--border-style);
+	border-color: var(--border-color);
+	border-radius: var(--border-radius);
+	font-weight: var(--weight);
+	padding: var(--padding);
+	transition: 150ms;
+
+	&:focus,
+	&:active {
+		outline-width: var(--outline-width-focus);
+		outline-style: var(--outline-style-focus);
+		outline-color: var(--outline-color-focus);
+	}
+
+	&:disabled {
+		cursor: not-allowed;
+	}
+
+	&::placeholder {
+		color: var(--placeholder-color);
+		font-weight: var(--placeholder-weight);
+	}
+}
