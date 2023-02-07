@@ -16,6 +16,9 @@
 .jevenly {
 	justify-content: space-evenly;
 }
+.jstretch {
+	justify-content: stretch;
+}
 
 .astart {
 	align-items: flex-start;
@@ -25,9 +28,6 @@
 }
 .acenter {
 	align-items: center;
-}
-.abase {
-	align-items: baseline;
 }
 .astretch {
 	align-items: stretch;
@@ -55,11 +55,30 @@
 .scenter {
 	align-self: center;
 }
-.sbase {
-	align-self: baseline;
-}
 .sstretch {
 	align-self: stretch;
+}
+
+.cstart {
+	align-content: flex-start;
+}
+.cend {
+	align-content: flex-end;
+}
+.ccenter {
+	align-content: center;
+}
+.cbetween {
+	align-content: space-between;
+}
+.caround {
+	align-content: space-around;
+}
+.cevenly {
+	align-content: space-evenly;
+}
+.cstretch {
+	align-content: space-evenly;
 }
 
 @media (--sm) {
@@ -81,6 +100,9 @@
 	.jevenly\@sm {
 		justify-content: space-evenly;
 	}
+	.jstretch\@sm {
+		justify-content: stretch;
+	}
 
 	.astart\@sm {
 		align-items: flex-start;
@@ -90,9 +112,6 @@
 	}
 	.acenter\@sm {
 		align-items: center;
-	}
-	.abase\@sm {
-		align-items: baseline;
 	}
 	.astretch\@sm {
 		align-items: stretch;
@@ -120,11 +139,30 @@
 	.scenter\@sm {
 		align-self: center;
 	}
-	.sbase\@sm {
-		align-self: baseline;
-	}
 	.sstretch\@sm {
 		align-self: stretch;
+	}
+
+	.cstart\@sm {
+		align-content: flex-start;
+	}
+	.cend\@sm {
+		align-content: flex-end;
+	}
+	.ccenter\@sm {
+		align-content: center;
+	}
+	.cbetween\@sm {
+		align-content: space-between;
+	}
+	.caround\@sm {
+		align-content: space-around;
+	}
+	.cevenly\@sm {
+		align-content: space-evenly;
+	}
+	.cstretch\@sm {
+		align-content: stretch;
 	}
 }
 
@@ -147,6 +185,9 @@
 	.jevenly\@md {
 		justify-content: space-evenly;
 	}
+	.jstretch\@md {
+		justify-content: stretch;
+	}
 
 	.astart\@md {
 		align-items: flex-start;
@@ -156,9 +197,6 @@
 	}
 	.acenter\@md {
 		align-items: center;
-	}
-	.abase\@md {
-		align-items: baseline;
 	}
 	.astretch\@md {
 		align-items: stretch;
@@ -186,11 +224,31 @@
 	.scenter\@md {
 		align-self: center;
 	}
-	.sbase\@md {
-		align-self: baseline;
-	}
+
 	.sstretch\@md {
 		align-self: stretch;
+	}
+
+	.cstart\@md {
+		align-content: flex-start;
+	}
+	.cend\@md {
+		align-content: flex-end;
+	}
+	.ccenter\@md {
+		align-content: center;
+	}
+	.cbetween\@md {
+		align-content: space-between;
+	}
+	.caround\@md {
+		align-content: space-around;
+	}
+	.cevenly\@md {
+		align-content: space-evenly;
+	}
+	.cstretch\@md {
+		align-content: stretch;
 	}
 }
 
@@ -213,6 +271,9 @@
 	.jevenly\@lg {
 		justify-content: space-evenly;
 	}
+	.jstretch\@lg {
+		justify-content: stretch;
+	}
 
 	.astart\@lg {
 		align-items: flex-start;
@@ -222,9 +283,6 @@
 	}
 	.acenter\@lg {
 		align-items: center;
-	}
-	.abase\@lg {
-		align-items: baseline;
 	}
 	.astretch\@lg {
 		align-items: stretch;
@@ -252,11 +310,30 @@
 	.scenter\@lg {
 		align-self: center;
 	}
-	.sbase\@lg {
-		align-self: baseline;
-	}
 	.sstretch\@lg {
 		align-self: stretch;
+	}
+
+	.cstart\@lg {
+		align-content: flex-start;
+	}
+	.cend\@lg {
+		align-content: flex-end;
+	}
+	.ccenter\@lg {
+		align-content: center;
+	}
+	.cbetween\@lg {
+		align-content: space-between;
+	}
+	.caround\@lg {
+		align-content: space-around;
+	}
+	.cevenly\@lg {
+		align-content: space-evenly;
+	}
+	.cstretch\@lg {
+		align-content: stretch;
 	}
 }
 
@@ -279,6 +356,9 @@
 	.jevenly\@xl {
 		justify-content: space-evenly;
 	}
+	.jstretch\@xl {
+		justify-content: stretch;
+	}
 
 	.astart\@xl {
 		align-items: flex-start;
@@ -288,9 +368,6 @@
 	}
 	.acenter\@xl {
 		align-items: center;
-	}
-	.abase\@xl {
-		align-items: baseline;
 	}
 	.astretch\@xl {
 		align-items: stretch;
@@ -318,11 +395,30 @@
 	.scenter\@xl {
 		align-self: center;
 	}
-	.sbase\@xl {
-		align-self: baseline;
-	}
 	.sstretch\@xl {
 		align-self: stretch;
+	}
+
+	.cstart\@xl {
+		align-content: flex-start;
+	}
+	.cend\@xl {
+		align-content: flex-end;
+	}
+	.ccenter\@xl {
+		align-content: center;
+	}
+	.cbetween\@xl {
+		align-content: space-between;
+	}
+	.caround\@xl {
+		align-content: space-around;
+	}
+	.cevenly\@xl {
+		align-content: space-evenly;
+	}
+	.cstretch\@xl {
+		align-content: stretch;
 	}
 }
 
@@ -345,6 +441,9 @@
 	.jevenly\@xxl {
 		justify-content: space-evenly;
 	}
+	.jstretch\@xxl {
+		justify-content: stretch;
+	}
 
 	.astart\@xxl {
 		align-items: flex-start;
@@ -354,9 +453,6 @@
 	}
 	.acenter\@xxl {
 		align-items: center;
-	}
-	.abase\@xxl {
-		align-items: baseline;
 	}
 	.astretch\@xxl {
 		align-items: stretch;
@@ -384,10 +480,29 @@
 	.scenter\@xxl {
 		align-self: center;
 	}
-	.sbase\@xxl {
-		align-self: baseline;
-	}
 	.sstretch\@xxl {
 		align-self: stretch;
+	}
+
+	.cstart\@xxl {
+		align-content: flex-start;
+	}
+	.cend\@xxl {
+		align-content: flex-end;
+	}
+	.ccenter\@xxl {
+		align-content: center;
+	}
+	.cbetween\@xxl {
+		align-content: space-between;
+	}
+	.caround\@xxl {
+		align-content: space-around;
+	}
+	.cevenly\@xxl {
+		align-content: space-evenly;
+	}
+	.cstretch\@xxl {
+		align-content: stretch;
 	}
 }
