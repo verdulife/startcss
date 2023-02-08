@@ -19,10 +19,8 @@
 	--border-style: solid;
 	--border-color: var(--base-100);
 	--border-radius: 0.25em;
-	--outline-width-focus: 0 0 2px 0;
-	--outline-style-focus: solid;
-	--outline-color-focus: var(--accent);
-	--padding: 1em 2em;
+	--shadow-focus: inset 0 -4px 0 var(--accent);
+	--padding: 1em;
 	--placeholder-color: var(--base-400);
 	--placeholder-weight: normal;
 }
@@ -41,9 +39,7 @@
 
 	&:focus,
 	&:active {
-		outline-width: var(--outline-width-focus);
-		outline-style: var(--outline-style-focus);
-		outline-color: var(--outline-color-focus);
+		box-shadow: var(--shadow-focus);
 	}
 
 	&:disabled {

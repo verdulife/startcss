@@ -18,6 +18,8 @@
 	--weight: normal;
 	--strong-color: var(--accent);
 	--strong-weight: bold;
+	--selection-bg: var(--accent);
+	--selection-color: var(--base-900);
 }
 
 /* ⚡ startcss reset ⚡ */
@@ -33,4 +35,9 @@
 		font-weight: var(--strong-weight);
 		color: var(--strong-color);
 	}
+}
+
+::selection {
+	background-color: var(--selection-bg);
+	color: var(--selection-color);
 }

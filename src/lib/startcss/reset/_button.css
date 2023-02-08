@@ -30,6 +30,7 @@
 	background: var(--bg);
 	color: var(--color);
 	text-align: center;
+	text-decoration: none;
 	border-radius: var(--border-radius);
 	user-select: none;
 	-webkit-user-drag: none;
@@ -40,6 +41,10 @@
 	&:focus,
 	&:active {
 		filter: brightness(0.9);
+
+		@media (--touch) {
+			filter: none;
+		}
 	}
 
 	&:disabled {

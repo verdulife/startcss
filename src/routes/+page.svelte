@@ -3,9 +3,9 @@
 </script>
 
 <section class="col acenter wfull">
-	<button>Button</button>
-	<a class="btn">Anchor as button</a>
-	<input type="text" placeholder="Input..." />
+	<button class="wfull wfull@sm w1/4@lg">Button</button>
+	<a class="btn wfull wfull@sm w1/4@lg" href="/">Anchor as button</a>
+	<input class="wfull w2/4@lg" type="text" placeholder="Input..." />
 	<h1>Heading <strong>h1</strong></h1>
 	<h2>Heading <strong>h2</strong></h2>
 	<h3>Heading <strong>h3</strong></h3>
