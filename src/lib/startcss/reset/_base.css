@@ -27,7 +27,7 @@
 		border: none;
 	}
 
-	@media (prefers-reduced-motion: reduce) {
+	@media (--reduced-motion) {
 		transition: none !important;
 		animation: none !important;
 		scroll-behavior: auto !important;
@@ -44,14 +44,13 @@ body {
 
 html {
 	background-color: #000;
-	font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
-		'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-family: var(--font-start);
 	font-size: 100%;
 	vertical-align: baseline;
 }
 
 body {
-	background-color: #fff;
+	background-color: var(--start);
 
 	&[rounded-corners] {
 		border-radius: 0.5em;

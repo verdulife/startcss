@@ -1,0 +1,24 @@
+/* 
+          __             __                
+    _____/ /_____ ______/ /________________
+   / ___/ __/ __ `/ ___/ __/ ___/ ___/ ___/
+  (__  ) /_/ /_/ / /  / /_/ /__(__  |__  ) 
+ /____/\__/\__,_/_/   \__/\___/____/____/  v0.0.1 
+
+*/
+
+@import './fonts/inter-variable.css';
+
+/* 🎨 custom properties 🎨 */
+
+:root {
+	--emoji-ui: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	--system-ui: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, var(--emoji-ui);
+	--code-ui: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono',
+		'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono',
+		'Courier New', monospace, var(--emoji-ui);
+
+	--font-start: 'Inter', var(--system-ui);
+	--font-title: 'Inter', var(--system-ui);
+	--font-code: var(--code-ui);
+}

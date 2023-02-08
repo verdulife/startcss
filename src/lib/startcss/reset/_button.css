@@ -12,14 +12,14 @@
 /* 🎨 custom properties 🎨 */
 
 :--button {
-	--color: var(--base-900);
-	--color-alt: var(--base);
-	--bg-disabled: var(--base-300);
-	--color-disabled: var(--base-500);
+	--color: var(--start-900);
+	--color-alt: var(--start);
+	--bg-disabled: var(--start-300);
+	--color-disabled: var(--start-500);
 	--weight: bold;
 	--border: 2px solid transparent;
 	--border-radius: 0.25em;
-	--padding: 1em 2em;
+	--padding: 0.75em 1.75em;
 }
 
 /* ⚡ startcss reset ⚡ */
@@ -53,6 +53,20 @@
 	}
 }
 
+a {
+	text-decoration: underline wavy;
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+
+		@media (--touch) {
+			text-decoration: underline wavy;
+		}
+	}
+}
+
 :--button.accent {
 	background-color: var(--accent);
 	color: var(--color);
@@ -72,22 +86,22 @@
 
 :--button.info {
 	background-color: var(--info);
-	color: var(--base);
+	color: var(--start);
 	border-color: var(--info);
 }
 :--button.success {
 	background-color: var(--success);
-	color: var(--base);
+	color: var(--start);
 	border-color: var(--success);
 }
 :--button.warning {
 	background-color: var(--warning);
-	color: var(--base-900);
+	color: var(--start-900);
 	border-color: var(--warning);
 }
 :--button.error {
 	background-color: var(--error);
-	color: var(--base);
+	color: var(--start);
 	border-color: var(--error);
 }
 

@@ -17,13 +17,4 @@ const colors = {
   error: "#CB0B44",
 }
 
-// Choose good contrast colors for texts
-// Defined color will auto add a "t-" prefix and accesible as var(--t-your-color).
-// Undefined colors will use base as default
-// Ex. var(--t-accent);
-const textColors = {
-  base: "#1a1a1a",
-  alt: "#fafafa",
-}
-
 generatePalettes(colors);

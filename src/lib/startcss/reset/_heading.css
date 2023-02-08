@@ -12,8 +12,8 @@
 /* 🎨 custom properties 🎨 */
 
 :--heading {
-	--font: var(--font-inter);
-	--color: var(--base-900);
+	--font: var(--font-title);
+	--color: var(--start-900);
 	--weight: normal;
 	--strong-color: var(--accent);
 	--strong-weight: bold;

@@ -26,7 +26,7 @@
 	<textarea class="wfull w2/4@lg" placeholder="Textarea..." />
 	<label class="col wfull w2/4@lg" for="labeled">
 		<span>Labeled input</span>
-		<input class="wfull w2/4@lg" type="text" id="labeled" placeholder="Input..." />
+		<input class="wfull" type="text" id="labeled" placeholder="Input..." />
 	</label>
 	<label class="row acenter wfull w2/4@lg" for="checkbox">
 		<span>Checkbox</span>
@@ -63,6 +63,10 @@
 <style lang="postcss">
 	section {
 		gap: 2em;
-		padding: 4em;
+		padding: 2em;
+		
+		@media (--md) {
+			padding: 4em;
+		}
 	}
 </style>

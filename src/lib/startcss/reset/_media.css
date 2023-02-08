@@ -12,7 +12,7 @@
 /* 🎨 custom properties 🎨 */
 
 picture {
-	--avatar-border: 2px solid var(--base-300);
+	--avatar-border: 2px solid var(--start-300);
 	--avatar-radius: 50%;
 }
 

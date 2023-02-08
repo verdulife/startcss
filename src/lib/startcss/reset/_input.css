@@ -7,23 +7,23 @@
 
 */
 
-@custom-selector :--input input, select, textarea;
 @custom-selector :--input-ui
 	input[type='checkbox'],
 	input[type='radio'],
 	input[type='range'],
 	progress;
+@custom-selector :--input input:not(:--input-ui), select, textarea;
 
 /* 🎨 custom properties 🎨 */
 
 :--input {
-	--bg: var(--base);
-	--color: var(--base-900);
+	--bg: var(--start);
+	--color: var(--start-900);
 	--weight: normal;
-	--border: 1px solid var(--base-200);
+	--border: 1px solid var(--start-200);
 	--border-radius: 0.25em;
 	--inset-color-focus: inset 0 -4px 0 var(--accent);
-	--placeholder-color: var(--base-500);
+	--placeholder-color: var(--start-500);
 	--placeholder-weight: normal;
 	--padding: 1em;
 }
@@ -31,7 +31,7 @@
 label {
 	--gap: 0.5em;
 	--size: clamp(12px, 1em, 14px);
-	--padding: 0 0 0 1em;
+	--left: 1em;
 }
 
 /* ⚡ startcss reset ⚡ */
@@ -44,8 +44,8 @@ label {
 	padding: var(--padding);
 	transition: 150ms;
 
-	&:focus:not(:--input-ui),
-	&:active:not(:--input-ui) {
+	&:focus,
+	&:active {
 		box-shadow: var(--inset-color-focus);
 	}
 
@@ -65,13 +65,18 @@ label {
 
 label {
 	--font-size: var(--size);
+	position: relative;
 
-	& > :--text:not(:--input) {
+	& > span:has(+ :--input) {
+		position: absolute;
+		bottom: calc(100% - var(--font-size) / 2);
+		left: var(--left);
+		background: var(--start);
+		mix-blend-mode: lightness;
 		font-size: var(--font-size);
-		padding: var(--padding);
+		padding: 0.05em 0.25em;
 	}
 
-	&:has(> :--input),
 	&:has(> :--input-ui) {
 		gap: var(--gap);
 	}

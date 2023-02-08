@@ -1,15 +1,19 @@
-/* BREAKPORINTS */
+/* 
+          __             __                
+    _____/ /_____ ______/ /________________
+   / ___/ __/ __ `/ ___/ __/ ___/ ___/ ___/
+  (__  ) /_/ /_/ / /  / /_/ /__(__  |__  ) 
+ /____/\__/\__,_/_/   \__/\___/____/____/  v0.0.1 
+
+*/
+
+/* 🎨 custom properties 🎨 */
+
 @import './_breakpoints.css';
+@import './_colors.css';
+@import './_fonts.css';
 
-/* BASE */
+/* ⚡ startcss reset ⚡ */
+
 @import './layout/layout.css';
-@import './theme/theme.css';
 @import './reset/reset.css';
-
-/* FONTS */
-@import './fonts/inter-variable.css';
-
-/* CONFIG */
-:root {
-	font-family: 'Inter';
-}
