@@ -54,7 +54,7 @@ body {
 	background-color: #fff;
 
 	&[rounded-corners] {
-		border-radius: 0.25em;
+		border-radius: 0.5em;
 	}
 }
 
@@ -66,6 +66,10 @@ li {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+select {
+	appearance: none;
 }
 
 textarea {

@@ -12,12 +12,12 @@
 /* 🎨 custom properties 🎨 */
 
 :--button {
-	--bg: var(--accent);
 	--color: var(--base-900);
+	--color-alt: var(--base);
+	--bg-disabled: var(--base-300);
+	--color-disabled: var(--base-500);
 	--weight: bold;
-	--border-width: 0;
-	--border-style: solid;
-	--border-color: transparent;
+	--border: 2px solid transparent;
 	--border-radius: 0.25em;
 	--padding: 1em 2em;
 }
@@ -27,10 +27,11 @@
 :--button {
 	cursor: pointer;
 	display: block;
-	background: var(--bg);
+	background: var(--accent);
 	color: var(--color);
 	text-align: center;
 	text-decoration: none;
+	border: var(--border);
 	border-radius: var(--border-radius);
 	user-select: none;
 	-webkit-user-drag: none;
@@ -52,76 +53,76 @@
 	}
 }
 
-:--button.outline {
-	background-color: transparent;
-}
-
-:--button.disabled {
-	cursor: not-allowed;
-	background-color: var(--c-neutral-500);
-	color: var(--c-neutral-700);
-	border-color: var(--c-neutral-500);
-}
-
 :--button.accent {
-	background-color: var(--c-accent);
-	color: var(--text-accent);
-	border-color: var(--c-accent);
+	background-color: var(--accent);
+	color: var(--color);
+	border-color: var(--accent);
 }
 :--button.alt {
-	background-color: var(--c-alt);
-	color: var(--text-alt);
-	border-color: var(--c-alt);
+	background-color: var(--alt);
+	color: var(--color-alt);
+	border-color: var(--alt);
+}
+:--button.disabled {
+	cursor: not-allowed;
+	background: var(--bg-disabled);
+	color: var(--color-disabled);
+	border-color: var(--bg-disabled);
 }
 
+:--button.info {
+	background-color: var(--info);
+	color: var(--base);
+	border-color: var(--info);
+}
 :--button.success {
-	background-color: var(--c-success);
-	color: var(--c-neutral);
-	border-color: var(--c-success);
+	background-color: var(--success);
+	color: var(--base);
+	border-color: var(--success);
 }
 :--button.warning {
-	background-color: var(--c-warning);
-	color: var(--c-neutral-900);
-	border-color: var(--c-warning);
+	background-color: var(--warning);
+	color: var(--base-900);
+	border-color: var(--warning);
 }
 :--button.error {
-	background-color: var(--c-error);
-	color: var(--c-neutral);
-	border-color: var(--c-error);
-}
-:--button.info {
-	background-color: var(--c-info);
-	color: var(--c-neutral);
-	border-color: var(--c-info);
+	background-color: var(--error);
+	color: var(--base);
+	border-color: var(--error);
 }
 
-:--button.accent.outline {
-	color: var(--c-accent);
-	border-color: var(--c-accent);
-}
-:--button.alt.outline {
-	color: var(--c-alt);
-	border-color: var(--c-alt);
-}
-
-:--button.success.outline {
-	color: var(--c-success);
-	border-color: var(--c-success);
-}
-:--button.warning.outline {
-	color: var(--c-warning);
-	border-color: var(--c-warning);
-}
-:--button.error.outline {
-	color: var(--c-error);
-	border-color: var(--c-error);
-}
-:--button.info.outline {
-	color: var(--c-info);
-	border-color: var(--c-info);
+:--button.outline {
+	background-color: transparent;
+	color: var(--accent);
+	border-color: var(--accent);
 }
 
 :--button.disabled.outline {
-	color: var(--c-neutral-500);
-	border-color: var(--c-neutral-500);
+	color: var(--bg-disabled);
+	border-color: var(--bg-disabled);
+}
+:--button.accent.outline {
+	color: var(--accent);
+	border-color: var(--accent);
+}
+:--button.alt.outline {
+	color: var(--alt);
+	border-color: var(--alt);
+}
+
+:--button.info.outline {
+	color: var(--info);
+	border-color: var(--info);
+}
+:--button.success.outline {
+	color: var(--success);
+	border-color: var(--success);
+}
+:--button.warning.outline {
+	color: var(--warning);
+	border-color: var(--warning);
+}
+:--button.error.outline {
+	color: var(--error);
+	border-color: var(--error);
 }

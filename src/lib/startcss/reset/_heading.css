@@ -32,8 +32,8 @@
 	font-weight: var(--weight);
 	color: var(--color);
 
-	strong,
-	b {
+	& strong,
+	& b {
 		font-weight: var(--strong-weight);
 		color: var(--strong-color);
 	}

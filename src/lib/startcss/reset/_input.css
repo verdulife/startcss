@@ -8,6 +8,11 @@
 */
 
 @custom-selector :--input input, select, textarea;
+@custom-selector :--input-ui
+	input[type='checkbox'],
+	input[type='radio'],
+	input[type='range'],
+	progress;
 
 /* 🎨 custom properties 🎨 */
 
@@ -15,31 +20,33 @@
 	--bg: var(--base);
 	--color: var(--base-900);
 	--weight: normal;
-	--border-width: 1px;
-	--border-style: solid;
-	--border-color: var(--base-100);
+	--border: 1px solid var(--base-200);
 	--border-radius: 0.25em;
-	--shadow-focus: inset 0 -4px 0 var(--accent);
-	--padding: 1em;
-	--placeholder-color: var(--base-400);
+	--inset-color-focus: inset 0 -4px 0 var(--accent);
+	--placeholder-color: var(--base-500);
 	--placeholder-weight: normal;
+	--padding: 1em;
+}
+
+label {
+	--gap: 0.5em;
+	--size: clamp(12px, 1em, 14px);
+	--padding: 0 0 0 1em;
 }
 
 /* ⚡ startcss reset ⚡ */
 
 :--input {
 	background: var(--bg);
-	border-width: var(--border-width);
-	border-style: var(--border-style);
-	border-color: var(--border-color);
+	border: var(--border);
 	border-radius: var(--border-radius);
 	font-weight: var(--weight);
 	padding: var(--padding);
 	transition: 150ms;
 
-	&:focus,
-	&:active {
-		box-shadow: var(--shadow-focus);
+	&:focus:not(:--input-ui),
+	&:active:not(:--input-ui) {
+		box-shadow: var(--inset-color-focus);
 	}
 
 	&:disabled {
@@ -49,5 +56,23 @@
 	&::placeholder {
 		color: var(--placeholder-color);
 		font-weight: var(--placeholder-weight);
+	}
+}
+
+:--input-ui {
+	accent-color: var(--accent);
+}
+
+label {
+	--font-size: var(--size);
+
+	& > :--text:not(:--input) {
+		font-size: var(--font-size);
+		padding: var(--padding);
+	}
+
+	&:has(> :--input),
+	&:has(> :--input-ui) {
+		gap: var(--gap);
 	}
 }
