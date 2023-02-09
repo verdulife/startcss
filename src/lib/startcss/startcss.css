@@ -15,5 +15,5 @@
 
 /* ⚡ startcss reset ⚡ */
 
-@import './layout/layout.css';
+@import './lib/layout/layout.css';
 @import './reset/reset.css';

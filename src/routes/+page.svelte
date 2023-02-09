@@ -4,16 +4,16 @@
 
 <section class="col acenter wfull">
 	<h3>Buttons and anchors</h3>
-	<button class="wfull wfull@sm w1/4@lg">Button</button>
-	<button class="alt wfull wfull@sm w1/4@lg">Alt</button>
-	<button class="disabled wfull wfull@sm w1/4@lg">Disabled</button>
-	<button class="outline wfull wfull@sm w1/4@lg">Outline</button>
-	<button class="info wfull wfull@sm w1/4@lg">Disabled</button>
-	<button class="success wfull wfull@sm w1/4@lg">Disabled</button>
-	<button class="warning wfull wfull@sm w1/4@lg">Disabled</button>
-	<button class="error wfull wfull@sm w1/4@lg">Disabled</button>
+	<button class="wfull w1/4@md">Button</button>
+	<button class="alt wfull w1/4@md">Alt</button>
+	<button class="disabled wfull w1/4@md">Disabled</button>
+	<button class="outline wfull w1/4@md">Outline</button>
+	<button class="info wfull w1/4@md">Info</button>
+	<button class="success wfull w1/4@md">Success</button>
+	<button class="warning wfull w1/4@md">Warning</button>
+	<button class="error wfull w1/4@md">Error</button>
 	<a class="tcenter" href="/">Anchor</a>
-	<a class="btn wfull wfull@sm w1/4@lg" href="/">Anchor as button</a>
+	<a class="btn wfull w1/4@md" href="/">Anchor as button</a>
 
 	<h3>Inputs</h3>
 	<input class="wfull w2/4@lg" type="text" placeholder="Input..." />
@@ -64,7 +64,7 @@
 	section {
 		gap: 2em;
 		padding: 2em;
-		
+
 		@media (--md) {
 			padding: 4em;
 		}
