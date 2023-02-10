@@ -13,16 +13,20 @@
 
 :--heading {
 	--font: var(--font-title);
-	--color: var(--start-900);
+	--color: var(--base-900);
 	--weight: normal;
 	--strong-color: var(--accent);
 	--strong-weight: bold;
-	--h1: clamp(30px, 10vw, 80px);
-	--h2: clamp(26px, 7vw, 60px);
-	--h3: clamp(20px, 5vw, 36px);
-	--h4: clamp(16px, 4vw, 26px);
-	--h5: clamp(12px, 3vw, 16px);
-	--h6: clamp(10px, 2vw, 12px);
+	--h1: var(--font-xxl);
+	--h2: var(--font-xl);
+	--h3: var(--font-lg);
+	--h4: var(--font-md);
+	--h5: var(--font-sm);
+	--h6: var(--font-xs);
+
+	@media (--dark) {
+		--color: var(--base);
+	}
 }
 
 /* ⚡ startcss reset ⚡ */

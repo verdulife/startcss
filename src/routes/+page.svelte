@@ -5,6 +5,8 @@
 <section class="col acenter wfull">
 	<h3>Buttons and anchors</h3>
 	<button class="wfull w1/4@md">Button</button>
+	<button class="wfull base w1/4@md">Base</button>
+	<button class="wfull base outline w1/4@md">Base</button>
 	<button class="alt wfull w1/4@md">Alt</button>
 	<button class="disabled wfull w1/4@md">Disabled</button>
 	<button class="outline wfull w1/4@md">Outline</button>

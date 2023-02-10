@@ -1,0 +1,13 @@
+label {
+	--gap: 0.5em;
+	--size: clamp(12px, 1em, 14px);
+}
+
+label {
+	--font-size: var(--size);
+	gap: var(--gap);
+
+	& > :--text {
+		font-size: var(--font-size);
+	}
+}

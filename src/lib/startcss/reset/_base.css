@@ -7,6 +7,19 @@
 
 */
 
+/* 🎨 custom properties 🎨 */
+
+body {
+	--body-radius: 0.5em;
+	--bg: var(--base);
+	--color: var(--base-900);
+
+	@media (--dark) {
+		--bg: var(--base-900);
+		--color: var(--base);
+	}
+}
+
 /* ⚡ startcss reset ⚡ */
 
 *,
@@ -44,16 +57,17 @@ body {
 
 html {
 	background-color: #000;
-	font-family: var(--font-start);
+	font-family: var(--font-base);
 	font-size: 100%;
 	vertical-align: baseline;
 }
 
 body {
-	background-color: var(--start);
+	background-color: var(--bg);
+	color: var(--color);
 
-	&[rounded-corners] {
-		border-radius: 0.5em;
+	&[rounded] {
+		border-radius: var(--body-radius);
 	}
 }
 

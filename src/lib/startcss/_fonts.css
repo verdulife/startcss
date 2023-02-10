@@ -18,7 +18,7 @@
 		'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono',
 		'Courier New', monospace, var(--emoji-ui);
 
-	--font-start: 'Inter', var(--system-ui);
+	--font-base: 'Inter', var(--system-ui);
 	--font-title: 'Inter', var(--system-ui);
 	--font-code: var(--code-ui);
 }

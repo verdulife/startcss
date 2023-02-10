@@ -17,21 +17,22 @@
 /* 🎨 custom properties 🎨 */
 
 :--input {
-	--bg: var(--start);
-	--color: var(--start-900);
+	--bg: var(--base);
+	--color: var(--base-900);
 	--weight: normal;
-	--border: 1px solid var(--start-200);
+	--border: 1px solid var(--base-200);
 	--border-radius: 0.25em;
 	--inset-color-focus: inset 0 -4px 0 var(--accent);
-	--placeholder-color: var(--start-500);
+	--placeholder-color: var(--base-500);
 	--placeholder-weight: normal;
 	--padding: 1em;
-}
 
-label {
-	--gap: 0.5em;
-	--size: clamp(12px, 1em, 14px);
-	--left: 1em;
+	@media (--dark) {
+		--bg: var(--base-800);
+		--color: var(--base);
+		--border: 1px solid var(--base-700);
+		--placeholder-color: var(--base-600);
+	}
 }
 
 /* ⚡ startcss reset ⚡ */
@@ -61,23 +62,4 @@ label {
 
 :--input-ui {
 	accent-color: var(--accent);
-}
-
-label {
-	--font-size: var(--size);
-	position: relative;
-
-	& > span:has(+ :--input) {
-		position: absolute;
-		bottom: calc(100% - var(--font-size) / 2);
-		left: var(--left);
-		background: var(--start);
-		mix-blend-mode: lightness;
-		font-size: var(--font-size);
-		padding: 0.05em 0.25em;
-	}
-
-	&:has(> :--input-ui) {
-		gap: var(--gap);
-	}
 }

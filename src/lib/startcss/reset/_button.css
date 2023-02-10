@@ -12,15 +12,20 @@
 /* 🎨 custom properties 🎨 */
 
 :--button {
-	--color: var(--start-900);
-	--color-alt: var(--start);
-	--bg-disabled: var(--start-300);
-	--color-disabled: var(--start-500);
-	--size: var(--h2);
+	--color: var(--base-900);
+	--color-alt: var(--base);
+	--bg-disabled: var(--base-300);
+	--color-disabled: var(--base-500);
+	--size: var(--font-sm);
 	--weight: bold;
 	--border: 2px solid transparent;
 	--border-radius: 0.25em;
 	--padding: 1em 2em;
+
+	@media (--dark) {
+		--bg-disabled: var(--base-700);
+		--color-disabled: var(--base-900);
+	}
 }
 
 /* ⚡ startcss reset ⚡ */
@@ -49,20 +54,47 @@
 		}
 	}
 
+	&.outline {
+		background-color: transparent;
+		color: var(--accent);
+		border-color: var(--accent);
+	}
+
 	&:disabled {
 		cursor: not-allowed;
 	}
 }
 
 a:not(.btn) {
-	text-decoration: underline wavy;
+	text-decoration: underline;
 
 	&:hover,
 	&:focus {
 		text-decoration: none;
 
 		@media (--touch) {
-			text-decoration: underline wavy;
+			text-decoration: underline;
+		}
+	}
+}
+
+:--button.base {
+	background-color: var(--base-900);
+	color: var(--base);
+
+	&.outline {
+		background-color: transparent;
+		color: var(--base-900);
+		border-color: var(--base-900);
+	}
+
+	@media (--dark) {
+		background-color: var(--base);
+		color: var(--base-900);
+
+		&.outline {
+			color: var(--base);
+			border-color: var(--base);
 		}
 	}
 }
@@ -70,73 +102,77 @@ a:not(.btn) {
 :--button.accent {
 	background-color: var(--accent);
 	color: var(--color);
-	border-color: var(--accent);
+
+	&.outline {
+		background-color: transparent;
+		color: var(--accent);
+		border-color: var(--accent);
+	}
 }
+
 :--button.alt {
 	background-color: var(--alt);
 	color: var(--color-alt);
-	border-color: var(--alt);
+
+	&.outline {
+		background-color: transparent;
+		color: var(--alt);
+		border-color: var(--alt);
+	}
 }
+
 :--button.disabled {
 	cursor: not-allowed;
 	background: var(--bg-disabled);
 	color: var(--color-disabled);
-	border-color: var(--bg-disabled);
+
+	&.outline {
+		background-color: transparent;
+		color: var(--bg-disabled);
+		border-color: var(--bg-disabled);
+	}
 }
 
 :--button.info {
 	background-color: var(--info);
-	color: var(--start);
-	border-color: var(--info);
+	color: var(--base);
+
+	&.outline {
+		background-color: transparent;
+		color: var(--info);
+		border-color: var(--info);
+	}
 }
+
 :--button.success {
 	background-color: var(--success);
-	color: var(--start);
-	border-color: var(--success);
+	color: var(--base);
+
+	&.outline {
+		background-color: transparent;
+		color: var(--success);
+		border-color: var(--success);
+	}
 }
+
 :--button.warning {
 	background-color: var(--warning);
-	color: var(--start-900);
-	border-color: var(--warning);
+	color: var(--base-900);
+
+	&.outline {
+		background-color: transparent;
+		color: var(--warning);
+		border-color: var(--warning);
+	}
 }
+
 :--button.error {
 	background-color: var(--error);
-	color: var(--start);
-	border-color: var(--error);
-}
+	color: var(--base);
 
-:--button.outline {
-	background-color: transparent;
-	color: var(--accent);
-	border-color: var(--accent);
-}
-
-:--button.disabled.outline {
-	color: var(--bg-disabled);
-	border-color: var(--bg-disabled);
-}
-:--button.accent.outline {
-	color: var(--accent);
-	border-color: var(--accent);
-}
-:--button.alt.outline {
-	color: var(--alt);
-	border-color: var(--alt);
-}
-
-:--button.info.outline {
-	color: var(--info);
-	border-color: var(--info);
-}
-:--button.success.outline {
-	color: var(--success);
-	border-color: var(--success);
-}
-:--button.warning.outline {
-	color: var(--warning);
-	border-color: var(--warning);
-}
-:--button.error.outline {
-	color: var(--error);
-	border-color: var(--error);
+	&.outline {
+		background-color: transparent;
+		color: var(--error);
+		border-color: var(--error);
+	}
 }

@@ -12,14 +12,21 @@
 /* 🎨 custom properties 🎨 */
 
 :--text {
-	--font: var(--font-start);
-	--color: var(--start-800);
+	--font: var(--font-base);
+	--color: var(--base-800);
 	--size: clamp(14px, 2em, 18px);
 	--weight: normal;
-	--strong-color: var(--accent);
+	--strong-color: var(--alt);
 	--strong-weight: bold;
-	--selection-bg: var(--accent);
-	--selection-color: var(--start-900);
+	--selection-bg: var(--alt);
+	--selection-color: var(--base);
+
+	@media (--dark) {
+		--color: var(--base-100);
+		--strong-color: var(--accent);
+		--selection-bg: var(--accent);
+		--selection-color: var(--base-900);
+	}
 }
 
 /* ⚡ startcss reset ⚡ */

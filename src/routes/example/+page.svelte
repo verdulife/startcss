@@ -44,16 +44,16 @@
 	article {
 		max-width: 300px;
 		gap: 1.5em;
-		background-color: var(--start);
-		border: 1px solid var(--start-200);
+		background-color: var(--base);
+		border: 1px solid var(--base-200);
 		border-radius: 0.5em;
-		box-shadow: 0 5px 20px -10px var(--start-300);
+		box-shadow: 0 5px 20px -10px var(--base-300);
 		padding: 1.5em;
 	}
 
 	picture {
 		border-width: 4px;
-		box-shadow: 0 2px 5px var(--start-200);
+		box-shadow: 0 2px 5px var(--base-200);
 	}
 
 	main {
@@ -65,12 +65,12 @@
 	}
 
 	.xdiv {
-		background-color: var(--start-200);
+		background-color: var(--base-200);
 	}
 
 	footer {
 		& span {
-			border-right: 1px solid var(--start-200);
+			border-right: 1px solid var(--base-200);
 
 			&:last-of-type {
 				border-right: 0;
