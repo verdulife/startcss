@@ -7,9 +7,23 @@
 
 */
 
-@import './fonts/inter-variable.css';
+@import '../fonts/inter-variable.css';
 
 /* 🎨 custom properties 🎨 */
+
+:root {
+	--font-base: 'Inter', var(--system-ui);
+	--font-title: 'Inter', var(--system-ui);
+	--font-code: var(--code-ui);
+	--font-xxl: clamp(30px, 10vw, 80px);
+	--font-xl: clamp(26px, 7vw, 60px);
+	--font-lg: clamp(20px, 5vw, 36px);
+	--font-md: clamp(16px, 4vw, 26px);
+	--font-sm: clamp(12px, 3vw, 16px);
+	--font-xs: clamp(10px, 2vw, 12px);
+}
+
+/* ⚡ startcss reset ⚡ */
 
 :root {
 	--emoji-ui: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -17,8 +31,4 @@
 	--code-ui: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono',
 		'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono',
 		'Courier New', monospace, var(--emoji-ui);
-
-	--font-base: 'Inter', var(--system-ui);
-	--font-title: 'Inter', var(--system-ui);
-	--font-code: var(--code-ui);
 }

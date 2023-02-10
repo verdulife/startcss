@@ -14,19 +14,19 @@
 :--button {
 	--color: var(--base-900);
 	--color-alt: var(--base);
-	--bg-disabled: var(--base-300);
 	--color-disabled: var(--base-500);
+	--bg-disabled: var(--base-300);
 	--size: var(--font-sm);
 	--weight: bold;
-	--border: 3px solid transparent;
-	--border-radius: 0.25em;
+	--border: 2px solid transparent;
+	--border-radius: 0.4em;
 	--padding: 1.5em 2.5em;
-	
+
 	@media (--dark) {
 		--bg-disabled: var(--base-700);
 		--color-disabled: var(--base-900);
 	}
-	
+
 	@media (--md) {
 		--padding: 1em 2em;
 	}
@@ -52,6 +52,10 @@
 	&:hover,
 	&:focus {
 		filter: brightness(0.9);
+
+		@media (--dark) {
+			filter: brightness(0.8);
+		}
 
 		@media (--touch) {
 			filter: none;

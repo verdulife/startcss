@@ -7,14 +7,14 @@
 
 */
 
-@custom-selector :--text p, a, button, span, label, input, textarea, select, option, optgroup;
+@custom-selector :--text p, a, button, span, input, textarea, select, option, optgroup;
 
 /* 🎨 custom properties 🎨 */
 
 :--text {
 	--font: var(--font-base);
 	--color: var(--base-800);
-	--size: clamp(14px, 2em, 18px);
+	--size: var(--font-sm);
 	--weight: normal;
 	--strong-color: var(--alt);
 	--strong-weight: bold;

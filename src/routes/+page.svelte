@@ -61,69 +61,40 @@
 			<h4>Base inputs</h4>
 
 			<div class="row aend wfull wrap">
-				<input class="wfull w1/3@lg" type="text" placeholder="Input..." />
-
-				<label class="col wfull w1/3@lg" for="input">
-					<span>Labeled input</span>
+				<div class="col wfull w1/3@lg">
+					<label class="col wfull" for="input"> Labeled input </label>
 					<input class="wfull" type="text" id="input" placeholder="Input..." />
-				</label>
-			</div>
-		</article>
+				</div>
 
-		<article class="col wfull">
-			<h4>Base selects</h4>
-
-			<div class="row aend wfull wrap">
-				<select class="wfull w1/3@lg">
-					<optgroup label="Optgroup">
-						<option value="">Select</option>
-						<option value="">Select</option>
-					</optgroup>
-				</select>
-
-				<label class="col wfull w1/3@lg" for="select">
-					<span>Labeled input</span>
+				<div class="col wfull w1/3@lg">
+					<label class="col wfull" for="select"> Labeled input </label>
 					<select class="wfull" id="select">
 						<optgroup label="Optgroup">
 							<option value="">Select</option>
 							<option value="">Select</option>
 						</optgroup>
 					</select>
-				</label>
-			</div>
-		</article>
+				</div>
 
-		<article class="col wfull">
-			<h4>Base textarea</h4>
-
-			<div class="row aend wfull wrap">
-				<textarea class="wfull w1/3@lg" placeholder="Textarea..." />
-
-				<label class="col wfull w1/3@lg" for="textarea">
-					<span>Labeled input</span>
+				<div class="col wfull">
+					<label class="wfull" for="textarea">Labeled input</label>
 					<textarea class="wfull" id="textarea" placeholder="Textarea..." />
-				</label>
-			</div>
-		</article>
+				</div>
 
-		<article class="col wfull">
-			<h4>Base input ui</h4>
-
-			<div class="row aend wfull wrap">
-				<label class="row acenter wfull w1/3@lg" for="checkbox">
-					<span>Checkbox</span>
+				<div class="row acenter wfull w1/3@lg">
+					<label for="checkbox">Checkbox</label>
 					<input type="checkbox" id="checkbox" checked />
-				</label>
+				</div>
 
-				<label class="row acenter wfull w1/3@lg" for="checkbox">
-					<span>Indeterminate checkbox</span>
-					<input type="checkbox" id="checkbox" indeterminate="true" />
-				</label>
-
-				<label class="row acenter wfull w1/3@lg" for="radio">
-					<span>Radio</span>
+				<div class="row acenter wfull w1/3@lg">
+					<label for="radio">Radio</label>
 					<input type="radio" id="radio" checked />
-				</label>
+				</div>
+
+				<div class="row acenter wfull w1/3@lg">
+					<label for="checkbox">Indeterminate checkbox</label>
+					<input type="checkbox" id="checkbox" indeterminate="true" />
+				</div>
 			</div>
 		</article>
 	</section>

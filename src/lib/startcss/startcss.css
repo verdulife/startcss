@@ -9,12 +9,17 @@
 
 /* 🎨 custom properties 🎨 */
 
-@import './⚡/_colors.css';
-@import './_breakpoints.css';
-@import './_fonts.css';
-@import './_texts.css';
+@import './⚡/⚡.palettes.css';
+@import './reset/⚡.base.css';
+@import './reset/⚡.scroll.css';
+@import './reset/⚡.font.css';
+@import './reset/⚡.text.css';
+@import './reset/⚡.heading.css';
+@import './reset/⚡.button.css';
+@import './reset/⚡.input.css';
+@import './reset/⚡.label.css';
+@import './reset/⚡.media.css';
 
 /* ⚡ startcss reset ⚡ */
 
 @import './⚡/layout/layout.css';
-@import './reset/reset.css';

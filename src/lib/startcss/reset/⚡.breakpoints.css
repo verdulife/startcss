@@ -15,11 +15,6 @@
 @custom-media --xl (width >= 1280px);
 @custom-media --xxl (width >= 1536px);
 
-@custom-media --reduced-motion (prefers-reduced-motion: reduce);
-@custom-media --touch (hover: none);
-@custom-media --dark (prefers-color-scheme: dark);
-@custom-media --light (prefers-color-scheme: light);
-
 :root {
 	--sm: 640px;
 	--md: 768px;
@@ -27,3 +22,10 @@
 	--xl: 1280px;
 	--xxl: 1536px;
 }
+
+/* ⚡ startcss reset ⚡ */
+
+@custom-media --reduced-motion (prefers-reduced-motion: reduce);
+@custom-media --touch (hover: none);
+@custom-media --dark (prefers-color-scheme: dark);
+@custom-media --light (prefers-color-scheme: light);
