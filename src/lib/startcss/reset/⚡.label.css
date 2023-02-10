@@ -22,6 +22,6 @@ label {
 	padding: var(--padding);
 
 	&:has(+ :--input-ui) {
-		font-size: var(--sm);
+		font-size: var(--font-sm);
 	}
 }

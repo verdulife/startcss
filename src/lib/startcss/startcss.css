@@ -11,14 +11,15 @@
 
 @import './⚡/⚡.palettes.css';
 @import './reset/⚡.base.css';
-@import './reset/⚡.scroll.css';
-@import './reset/⚡.font.css';
-@import './reset/⚡.text.css';
-@import './reset/⚡.heading.css';
+@import './reset/⚡.breakpoints.css';
 @import './reset/⚡.button.css';
+@import './reset/⚡.font.css';
+@import './reset/⚡.heading.css';
 @import './reset/⚡.input.css';
 @import './reset/⚡.label.css';
 @import './reset/⚡.media.css';
+@import './reset/⚡.scroll.css';
+@import './reset/⚡.text.css';
 
 /* ⚡ startcss reset ⚡ */
 
