@@ -1,13 +1,13 @@
 label {
 	--gap: 0.5em;
-	--size: clamp(12px, 1em, 14px);
+	--size: var(--font-xs);
 }
 
 label {
 	--font-size: var(--size);
 	gap: var(--gap);
 
-	& > :--text {
+	&:not(:has(:--input-ui)) > :--text:not(:--input) {
 		font-size: var(--font-size);
 	}
 }

@@ -18,13 +18,17 @@
 	--color-disabled: var(--base-500);
 	--size: var(--font-sm);
 	--weight: bold;
-	--border: 2px solid transparent;
+	--border: 3px solid transparent;
 	--border-radius: 0.25em;
-	--padding: 1em 2em;
-
+	--padding: 1.5em 2.5em;
+	
 	@media (--dark) {
 		--bg-disabled: var(--base-700);
 		--color-disabled: var(--base-900);
+	}
+	
+	@media (--md) {
+		--padding: 1em 2em;
 	}
 }
 

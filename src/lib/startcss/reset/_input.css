@@ -22,7 +22,7 @@
 	--weight: normal;
 	--border: 1px solid var(--base-200);
 	--border-radius: 0.25em;
-	--inset-color-focus: inset 0 -4px 0 var(--accent);
+	--inset-color-focus: inset 0 -10px 0 -6px var(--accent);
 	--placeholder-color: var(--base-500);
 	--placeholder-weight: normal;
 	--padding: 1em;
