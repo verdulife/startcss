@@ -7,7 +7,7 @@
 
 */
 
-@custom-selector :--text p, a, button, span, input, textarea, select, option, optgroup;
+@custom-selector :--text p, a, span, input, textarea, select, option, optgroup;
 
 /* 🎨 custom properties 🎨 */
 

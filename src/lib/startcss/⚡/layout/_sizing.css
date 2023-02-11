@@ -24,6 +24,25 @@
 	width: calc(100% / 2); /* 50 */
 }
 
+.h1\/4 {
+	height: calc(100% / 4); /* 25 */
+}
+.h2\/4 {
+	height: calc(200% / 4); /* 50 */
+}
+.h3\/4 {
+	height: calc(300% / 4); /* 75 */
+}
+.h1\/3 {
+	height: calc(100% / 3); /* 33 */
+}
+.h2\/3 {
+	height: calc(200% / 3); /* 66 */
+}
+.h1\/2 {
+	height: calc(100% / 2); /* 50 */
+}
+
 .wfull {
 	width: 100%;
 }
@@ -95,6 +114,25 @@
 	}
 	.w1\/2\@sm {
 		width: calc(100% / 2); /* 50 */
+	}
+
+	.h1\/4\@sm {
+		height: calc(100% / 4); /* 25 */
+	}
+	.h2\/4\@sm {
+		height: calc(200% / 4); /* 50 */
+	}
+	.h3\/4\@sm {
+		height: calc(300% / 4); /* 75 */
+	}
+	.h1\/3\@sm {
+		height: calc(100% / 3); /* 33 */
+	}
+	.h2\/3\@sm {
+		height: calc(200% / 3); /* 66 */
+	}
+	.h1\/2\@sm {
+		height: calc(100% / 2); /* 50 */
 	}
 
 	.wfull\@sm {
@@ -171,6 +209,25 @@
 		width: calc(100% / 2); /* 50 */
 	}
 
+	.h1\/4\@md {
+		height: calc(100% / 4); /* 25 */
+	}
+	.h2\/4\@md {
+		height: calc(200% / 4); /* 50 */
+	}
+	.h3\/4\@md {
+		height: calc(300% / 4); /* 75 */
+	}
+	.h1\/3\@md {
+		height: calc(100% / 3); /* 33 */
+	}
+	.h2\/3\@md {
+		height: calc(200% / 3); /* 66 */
+	}
+	.h1\/2\@md {
+		height: calc(100% / 2); /* 50 */
+	}
+
 	.wfull\@md {
 		width: 100%;
 	}
@@ -243,6 +300,25 @@
 	}
 	.w1\/2\@lg {
 		width: calc(100% / 2); /* 50 */
+	}
+
+	.h1\/4\@lg {
+		height: calc(100% / 4); /* 25 */
+	}
+	.h2\/4\@lg {
+		height: calc(200% / 4); /* 50 */
+	}
+	.h3\/4\@lg {
+		height: calc(300% / 4); /* 75 */
+	}
+	.h1\/3\@lg {
+		height: calc(100% / 3); /* 33 */
+	}
+	.h2\/3\@lg {
+		height: calc(200% / 3); /* 66 */
+	}
+	.h1\/2\@lg {
+		height: calc(100% / 2); /* 50 */
 	}
 
 	.wfull\@lg {
@@ -319,6 +395,25 @@
 		width: calc(100% / 2); /* 50 */
 	}
 
+	.h1\/4\@xl {
+		height: calc(100% / 4); /* 25 */
+	}
+	.h2\/4\@xl {
+		height: calc(200% / 4); /* 50 */
+	}
+	.h3\/4\@xl {
+		height: calc(300% / 4); /* 75 */
+	}
+	.h1\/3\@xl {
+		height: calc(100% / 3); /* 33 */
+	}
+	.h2\/3\@xl {
+		height: calc(200% / 3); /* 66 */
+	}
+	.h1\/2\@xl {
+		height: calc(100% / 2); /* 50 */
+	}
+
 	.wfull\@xl {
 		width: 100%;
 	}
@@ -391,6 +486,25 @@
 	}
 	.w1\/2\@xxl {
 		width: calc(100% / 2); /* 50 */
+	}
+
+	.h1\/4\@xxl {
+		height: calc(100% / 4); /* 25 */
+	}
+	.h2\/4\@xxl {
+		height: calc(200% / 4); /* 50 */
+	}
+	.h3\/4\@xxl {
+		height: calc(300% / 4); /* 75 */
+	}
+	.h1\/3\@xxl {
+		height: calc(100% / 3); /* 33 */
+	}
+	.h2\/3\@xxl {
+		height: calc(200% / 3); /* 66 */
+	}
+	.h1\/2\@xxl {
+		height: calc(100% / 2); /* 50 */
 	}
 
 	.wfull\@xxl {

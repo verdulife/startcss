@@ -26,7 +26,7 @@
 /* ⚡ startcss reset ⚡ */
 
 :root {
-	--emoji-ui: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	--emoji-ui: 'Segoe UI Emoji', 'Segoe UI Symbol', 'Apple Color Emoji';
 	--system-ui: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, var(--emoji-ui);
 	--code-ui: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono',
 		'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono',

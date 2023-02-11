@@ -40,6 +40,7 @@
 	background: var(--accent);
 	color: var(--color);
 	font-size: var(--size);
+	font-weight: var(--weight);
 	text-align: center;
 	text-decoration: none;
 	border: var(--border);
