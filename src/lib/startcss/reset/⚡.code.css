@@ -1,0 +1,30 @@
+/* 
+          __             __                
+    _____/ /_____ ______/ /________________
+   / ___/ __/ __ `/ ___/ __/ ___/ ___/ ___/
+  (__  ) /_/ /_/ / /  / /_/ /__(__  |__  ) 
+ /____/\__/\__,_/_/   \__/\___/____/____/  v0.0.1 
+
+*/
+
+@custom-selector :--code code, pre;
+
+/* 🎨 custom properties 🎨 */
+
+:--code {
+	--sm: 640px;
+	--md: 768px;
+	--lg: 1024px;
+	--xl: 1280px;
+	--xxl: 1536px;
+}
+
+/* ⚡ startcss reset ⚡ */
+
+:--code {
+	background: hsl(var(--base-900-hsl), 0.7);
+  color: turquoise;
+  border: 1px solid hsl(var(--base-500-hsl), 0.3);
+	border-radius: 0.5em;
+	padding: 0.5em 1em;
+}

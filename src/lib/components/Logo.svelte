@@ -2,7 +2,7 @@
 
 <style lang="postcss">
 	span {
-		font-size: var(--font-md);
+		font-size: var(--font-sm);
 		font-weight: bold;
 	}
 </style>

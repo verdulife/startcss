@@ -22,6 +22,10 @@
 		--bg: var(--base-900);
 		--color: var(--accent);
 	}
+
+	@media (--touch) {
+		--width: 0;
+	}
 }
 
 .scroll {
