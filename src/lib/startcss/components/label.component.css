@@ -10,7 +10,6 @@
 /* ⚡ startcss reset ⚡ */
 
 label {
-	font-family: var(--font-base);
 	font-size: var(--font-xs);
 	padding: 0.5em;
 
