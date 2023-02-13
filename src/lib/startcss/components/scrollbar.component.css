@@ -11,7 +11,7 @@
 
 /* 🎨 custom properties 🎨 */
 
-.scroll {
+.scrollbar {
 	--width: 20px;
 	--bg: var(--base);
 	--color: var(--alt);
@@ -28,7 +28,7 @@
 	}
 }
 
-.scroll {
+.scrollbar {
 	&::-webkit-scrollbar {
 		width: var(--width);
 	}

@@ -10,13 +10,13 @@
 			<h4>Base buttons</h4>
 
 			<div class="row wfull wrap">
-				<button class="wfull w1/4@md">Button</button>
-				<button class="base wfull w1/4@md">Base</button>
-				<button class="alt wfull w1/4@md">Alt</button>
-				<button class="info wfull w1/4@md">Info</button>
-				<button class="success wfull w1/4@md">Success</button>
-				<button class="warning wfull w1/4@md">Warning</button>
-				<button class="error wfull w1/4@md">Error</button>
+				<button class="w1/2 wfull@sm">Button</button>
+				<button class="base w1/2 wfull@sm">Base</button>
+				<button class="alt w1/2 wfull@sm">Alt</button>
+				<button class="info w1/2 wfull@sm">Info</button>
+				<button class="success w1/2 wfull@sm">Success</button>
+				<button class="warning w1/2 wfull@sm">Warning</button>
+				<button class="error w1/2 wfull@sm">Error</button>
 			</div>
 		</article>
 
@@ -24,13 +24,13 @@
 			<h4>Outline buttons</h4>
 
 			<div class="row wfull wrap">
-				<button class="outline wfull w1/4@md">Button</button>
-				<button class="outline base wfull w1/4@md">Base</button>
-				<button class="outline alt wfull w1/4@md">Alt</button>
-				<button class="outline info wfull w1/4@md">Info</button>
-				<button class="outline success wfull w1/4@md">Success</button>
-				<button class="outline warning wfull w1/4@md">Warning</button>
-				<button class="outline error wfull w1/4@md">Error</button>
+				<button class="outline w1/2 wfull@sm">Button</button>
+				<button class="outline base w1/2 wfull@sm">Base</button>
+				<button class="outline alt w1/2 wfull@sm">Alt</button>
+				<button class="outline info w1/2 wfull@sm">Info</button>
+				<button class="outline success w1/2 wfull@sm">Success</button>
+				<button class="outline warning w1/2 wfull@sm">Warning</button>
+				<button class="outline error w1/2 wfull@sm">Error</button>
 			</div>
 		</article>
 
@@ -38,8 +38,8 @@
 			<h4>Special buttons</h4>
 
 			<div class="row wfull wrap">
-				<button class="wfull w1/4@md" disabled>Disabled</button>
-				<button class="outline wfull w1/4@md" disabled>Disabled</button>
+				<button class="w1/2 wfull@sm" disabled>Disabled</button>
+				<button class="outline w1/2 wfull@sm" disabled>Disabled</button>
 			</div>
 		</article>
 
@@ -47,9 +47,9 @@
 			<h4>Anchors</h4>
 
 			<div class="row acenter wfull wrap">
-				<a class="btn wfull w1/4@md" href="/">Anchor as button</a>
-				<a class="btn outline wfull w1/4@md" href="/">Anchor as button</a>
-				<a href="/">Anchor</a>
+				<a class="btn w1/2 wfull@sm" href="/">Anchor as button</a>
+				<a class="btn outline w1/2 wfull@sm" href="/">Anchor as button</a>
+				<a class="tcenter w1/2 wfull@sm" href="/">Anchor</a>
 			</div>
 		</article>
 	</section>
@@ -61,13 +61,18 @@
 			<h4>Base inputs</h4>
 
 			<div class="row aend wfull wrap">
-				<div class="col wfull w1/3@lg">
-					<label class="col wfull" for="input"> Labeled input </label>
+				<div class="col w1/2 wfull@sm">
+					<label for="input"> Labeled input </label>
 					<input class="wfull" type="text" id="input" placeholder="Input..." />
 				</div>
 
-				<div class="col wfull w1/3@lg">
-					<label class="col wfull" for="select"> Labeled input </label>
+				<div class="col w1/2 wfull@sm">
+					<label for="input"> Labeled input </label>
+					<input class="wfull" type="text" id="input" placeholder="Input..." disabled />
+				</div>
+
+				<div class="col w1/2 wfull@sm">
+					<label for="select"> Labeled input </label>
 					<select class="wfull" id="select">
 						<optgroup label="Optgroup">
 							<option value="">Select</option>
@@ -76,22 +81,22 @@
 					</select>
 				</div>
 
-				<div class="col wfull">
-					<label class="wfull" for="textarea">Labeled input</label>
+				<div class="col w1/2 wfull@sm">
+					<label for="textarea">Labeled input</label>
 					<textarea class="wfull" id="textarea" placeholder="Textarea..." />
 				</div>
 
-				<div class="row acenter wfull w1/3@lg">
+				<div class="row acenter w1/2 wfull@sm">
 					<label for="checkbox">Checkbox</label>
 					<input type="checkbox" id="checkbox" checked />
 				</div>
 
-				<div class="row acenter wfull w1/3@lg">
+				<div class="row acenter w1/2 wfull@sm">
 					<label for="radio">Radio</label>
 					<input type="radio" id="radio" checked />
 				</div>
 
-				<div class="row acenter wfull w1/3@lg">
+				<div class="row acenter w1/2 wfull@sm">
 					<label for="checkbox">Indeterminate checkbox</label>
 					<input type="checkbox" id="checkbox" indeterminate="true" />
 				</div>

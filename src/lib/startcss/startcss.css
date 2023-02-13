@@ -17,7 +17,7 @@
 @import './custom/spacing.custom.css';
 
 @import './components/base.component.css';
-@import './components/scroll.component.css';
+@import './components/scrollbar.component.css';
 
 @import './components/anchor.component.css';
 @import './components/button.component.css';

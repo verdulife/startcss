@@ -34,25 +34,40 @@
 /* ⚡ startcss reset ⚡ */
 
 :--input {
-	background: var(--bg);
-	border: var(--border);
-	border-radius: var(--border-radius);
-	font-weight: var(--weight);
-	padding: var(--padding);
+	background-color: var(--base);
+	border: 1px solid var(--base-200);
+	border-radius: 0.5em;
+	font-weight: normal;
+	padding: 1em;
 	transition: 150ms;
 
-	&:focus,
-	&:active {
-		box-shadow: var(--inset-color-focus);
+	@media (--dark) {
+		background-color: var(--base-900);
+		color: var(--base-100);
+		border: 1px solid var(--base-700);
 	}
 
-	&:disabled {
-		cursor: not-allowed;
+	&:focus,
+	&:active:not(:disabled) {
+		box-shadow: inset 0 -10px 0 -6px var(--accent);
 	}
 
 	&::placeholder {
-		color: var(--placeholder-color);
-		font-weight: var(--placeholder-weight);
+		color: var(--base-500);
+
+		@media (--dark) {
+			color: var(--base-600);
+		}
+	}
+}
+
+:--input:disabled {
+	cursor: not-allowed;
+	background: var(--base-200);
+
+	@media (--dark) {
+		background: var(--base-700);
+		color: var(--base-200);
 	}
 }
 
