@@ -1,0 +1,12 @@
+a:not(.btn) {
+	text-decoration: underline;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+
+		@media (--touch) {
+			text-decoration: underline;
+		}
+	}
+}

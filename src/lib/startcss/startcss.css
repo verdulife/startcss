@@ -10,19 +10,26 @@
 /* 🎨 custom properties 🎨 */
 
 @import './⚡/⚡.palettes.css';
+
 @import './custom/breakpoint.custom.css';
 @import './custom/fontsize.custom.css';
+@import './custom/fontfamily.custom.css';
+@import './custom/spacing.custom.css';
 
-@import './components/⚡.base.css';
-@import './components/⚡.button.css';
-@import './components/⚡.code.css';
-@import './components/⚡.font.css';
-@import './components/⚡.heading.css';
-@import './components/⚡.input.css';
-@import './components/⚡.label.css';
-@import './components/⚡.media.css';
-@import './components/⚡.scroll.css';
-@import './components/⚡.text.css';
+@import './components/base.component.css';
+@import './components/scroll.component.css';
+
+@import './components/anchor.component.css';
+@import './components/button.component.css';
+
+@import './components/text.component.css';
+@import './components/heading.component.css';
+@import './components/_code.component.css';
+
+@import './components/input.component.css';
+@import './components/label.component.css';
+
+@import './components/media.component.css';
 
 /* ⚡ startcss reset ⚡ */
 

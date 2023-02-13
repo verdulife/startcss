@@ -38,8 +38,8 @@
 			<h4>Special buttons</h4>
 
 			<div class="row wfull wrap">
-				<button class="disabled wfull w1/4@md">Disabled</button>
-				<button class="outline disabled wfull w1/4@md">Disabled</button>
+				<button class="wfull w1/4@md" disabled>Disabled</button>
+				<button class="outline wfull w1/4@md" disabled>Disabled</button>
 			</div>
 		</article>
 

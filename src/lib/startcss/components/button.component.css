@@ -1,0 +1,129 @@
+/* 
+          __             __                
+    _____/ /_____ ______/ /________________
+		/ ___/ __/ __ `/ ___/ __/ ___/ ___/ ___/
+		(__  ) /_/ /_/ / /  / /_/ /__(__  |__  ) 
+		/____/\__/\__,_/_/   \__/\___/____/____/  v0.0.1 
+		
+		*/
+
+@custom-selector :--button button, a.btn;
+
+/* ⚡ startcss reset ⚡ */
+
+:--button {
+	cursor: pointer;
+	display: block;
+	background-color: var(--accent);
+	color: var(--base-900);
+	font-size: var(--font-sm);
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	border: 2px solid transparent;
+	border-radius: 0.4em;
+	user-select: none;
+	-webkit-user-drag: none;
+	padding: 1em 2em;
+	transition: 150ms;
+
+	&:hover,
+	&:focus {
+		filter: brightness(0.9);
+
+		@media (--dark) {
+			filter: brightness(0.8);
+		}
+		@media (--touch) {
+			filter: none;
+		}
+	}
+
+	@media (--sm) {
+		padding: 1.5em 2.5em;
+	}
+
+	&.outline {
+		background-color: transparent !important;
+		color: var(--accent);
+		border-color: currentColor;
+	}
+}
+
+:--button:disabled {
+	cursor: not-allowed;
+	background: var(--base-600);
+	color: var(--base-700);
+
+	@media (--dark) {
+		background: var(--base-700);
+		color: var(--base-800);
+	}
+
+	&.outline {
+		color: var(--base-700);
+	}
+}
+
+:--button.base {
+	background-color: var(--base-900);
+	color: var(--base);
+
+	@media (--dark) {
+		background-color: var(--base);
+		color: var(--base-900);
+	}
+
+	&.outline {
+		color: var(--base-900);
+
+		@media (--dark) {
+			color: var(--base);
+		}
+	}
+}
+
+:--button.alt {
+	background-color: var(--alt);
+	color: var(--base);
+
+	&.outline {
+		color: var(--alt);
+	}
+}
+
+:--button.info {
+	background-color: var(--info);
+	color: var(--base);
+
+	&.outline {
+		color: var(--info);
+	}
+}
+
+:--button.success {
+	background-color: var(--success);
+	color: var(--base);
+
+	&.outline {
+		color: var(--success);
+	}
+}
+
+:--button.warning {
+	background-color: var(--warning);
+	color: var(--base-900);
+
+	&.outline {
+		color: var(--warning);
+	}
+}
+
+:--button.error {
+	background-color: var(--error);
+	color: var(--base);
+
+	&.outline {
+		color: var(--error);
+	}
+}

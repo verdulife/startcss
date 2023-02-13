@@ -7,19 +7,12 @@
 
 */
 
-/* 🎨 custom properties 🎨 */
-
-label {
-	--size: var(--font-xs);
-	--padding: 0.5em;
-}
-
 /* ⚡ startcss reset ⚡ */
 
 label {
-	gap: var(--gap);
-	font-size: var(--size);
-	padding: var(--padding);
+	font-family: var(--font-base);
+	font-size: var(--font-xs);
+	padding: 0.5em;
 
 	&:has(+ :--input-ui) {
 		font-size: var(--font-sm);

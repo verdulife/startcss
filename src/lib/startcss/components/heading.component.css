@@ -1,0 +1,35 @@
+/* 
+          __             __                
+    _____/ /_____ ______/ /________________
+   / ___/ __/ __ `/ ___/ __/ ___/ ___/ ___/
+  (__  ) /_/ /_/ / /  / /_/ /__(__  |__  ) 
+ /____/\__/\__,_/_/   \__/\___/____/____/  v0.0.1 
+
+*/
+
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+/* ⚡ startcss reset ⚡ */
+
+:--heading {
+	font-family: var(--font-title);
+}
+
+h1 {
+	font-size: var(--font-2xl);
+}
+h2 {
+	font-size: var(--font-xl);
+}
+h3 {
+	font-size: var(--font-lg);
+}
+h4 {
+	font-size: var(--font-md);
+}
+h5 {
+	font-size: var(--font-sm);
+}
+h6 {
+	font-size: var(--font-xs);
+}

@@ -12,21 +12,21 @@
 /* 🎨 custom properties 🎨 */
 
 :root {
-	--font-clamp-xs: clamp(12px, 2vw, 14px);
-	--font-clamp-sm: clamp(14px, 3vw, 18px);
-	--font-clamp-md: clamp(18px, 4vw, 22px);
-	--font-clamp-lg: clamp(22px, 5vw, 26px);
-	--font-clamp-xl: clamp(26px, 7vw, 30px);
-	--font-clamp-2xl: clamp(30px, 10vw, 60px);
+	--font-xs: clamp(12px, 2vw, 14px);
+	--font-sm: clamp(14px, 3vw, 18px);
+	--font-md: clamp(18px, 4vw, 22px);
+	--font-lg: clamp(22px, 5vw, 26px);
+	--font-xl: clamp(26px, 7vw, 30px);
+	--font-2xl: clamp(30px, 10vw, 60px);
 
-	--font-xxs: 0.5rem;
-	--font-xs: 0.75rem;
-	--font-sm: 1rem;
-	--font-md: 1.1rem;
-	--font-lg: 1.25rem;
-	--font-xl: 1.5rem;
-	--font-2xl: 2rem;
-	--font-3xl: 2.5rem;
-	--font-4xl: 3rem;
-	--font-5xl: 3.5rem;
+	--font-static-xxs: 0.5rem;
+	--font-static-xs: 0.75rem;
+	--font-static-sm: 1rem;
+	--font-static-md: 1.1rem;
+	--font-static-lg: 1.25rem;
+	--font-static-xl: 1.5rem;
+	--font-static-2xl: 2rem;
+	--font-static-3xl: 2.5rem;
+	--font-static-4xl: 3rem;
+	--font-static-5xl: 3.5rem;
 }

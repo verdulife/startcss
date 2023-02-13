@@ -1,0 +1,53 @@
+/* 
+          __             __                
+    _____/ /_____ ______/ /________________
+   / ___/ __/ __ `/ ___/ __/ ___/ ___/ ___/
+  (__  ) /_/ /_/ / /  / /_/ /__(__  |__  ) 
+ /____/\__/\__,_/_/   \__/\___/____/____/  v0.0.1 
+
+*/
+
+@custom-selector :--text p, a, span, input, textarea, select, option, optgroup, :--heading;
+
+/* ⚡ startcss reset ⚡ */
+
+:--text {
+	font-family: var(--font-base);
+	font-size: var(--font-sm);
+	font-weight: normal;
+	color: var(--base-800);
+
+	@media (--dark) {
+		color: var(--base-100);
+	}
+
+	&::selection {
+		background-color: var(--alt);
+		color: var(--base-100);
+
+		@media (--dark) {
+			background-color: var(--accent);
+			color: var(--base-800);
+		}
+	}
+
+	& strong,
+	& b {
+		font-weight: bold;
+		color: var(--alt);
+
+		@media (--dark) {
+			color: var(--accent);
+		}
+
+		&::selection {
+			background-color: var(--alt);
+			color: var(--accent);
+
+			@media (--dark) {
+				background-color: var(--accent);
+				color: var(--alt);
+			}
+		}
+	}
+}
