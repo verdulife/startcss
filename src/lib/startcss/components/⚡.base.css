@@ -10,12 +10,13 @@
 /* 🎨 custom properties 🎨 */
 
 body {
-	--body-radius: 0.5em;
-	--bg: var(--base);
+	--background: var(--base);
 	--color: var(--base-900);
+	--font-family: var(--font-base);
+	--border-radius: 0.5em;
 
 	@media (--dark) {
-		--bg: var(--base-900);
+		--background: var(--base-900);
 		--color: var(--base);
 	}
 }
@@ -57,17 +58,17 @@ body {
 
 html {
 	background-color: #000;
-	font-family: var(--font-base);
+	font-family: var(--font-family);
 	font-size: 100%;
 	vertical-align: baseline;
 }
 
 body {
-	background-color: var(--bg);
+	background: var(--background);
 	color: var(--color);
 
 	&[rounded] {
-		border-radius: var(--body-radius);
+		border-radius: var(--border-radius);
 	}
 }
 

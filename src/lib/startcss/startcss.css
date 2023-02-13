@@ -10,8 +10,8 @@
 /* 🎨 custom properties 🎨 */
 
 @import './⚡/⚡.palettes.css';
-@import './custom/breakpoints.custom.css';
-@import './custom/font-size.custom.css';
+@import './custom/breakpoint.custom.css';
+@import './custom/fontsize.custom.css';
 
 @import './components/⚡.base.css';
 @import './components/⚡.button.css';

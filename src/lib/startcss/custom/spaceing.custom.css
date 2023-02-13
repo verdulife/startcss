@@ -12,12 +12,12 @@
 /* 🎨 custom properties 🎨 */
 
 :root {
-  --margin-xs: 0.25em;
-  --margin-sm: 0.5em;
-  --margin-md: 0.75em;
-  --margin-lg: 1em;
-  --margin-xl: 1.25em;
-  --margin-2xl: 1.5em;
-  --margin-3xl: 1.75em;
-  --margin-4xl: 2em;
+	--spaceing-xs: 0.25em;
+	--spaceing-sm: 0.5em;
+	--spaceing-md: 0.75em;
+	--spaceing-lg: 1em;
+	--spaceing-xl: 1.25em;
+	--spaceing-2xl: 1.5em;
+	--spaceing-3xl: 1.75em;
+	--spaceing-4xl: 2em;
 }

@@ -14,21 +14,21 @@
 :--button {
 	--color: var(--base-900);
 	--color-alt: var(--base);
+	--background-disabled: var(--base-300);
 	--color-disabled: var(--base-500);
-	--bg-disabled: var(--base-300);
-	--size: var(--font-sm);
-	--weight: bold;
+	--font-size: var(--font-sm);
+	--font-weight: bold;
 	--border: 2px solid transparent;
 	--border-radius: 0.4em;
 	--padding: 1em 2em;
 
-	@media (--dark) {
-		--bg-disabled: var(--base-700);
-		--color-disabled: var(--base-900);
+	@media (--sm) {
+		--padding: 1.5em 2.5em;
 	}
 
-	@media (--md) {
-		--padding: 1.5em 2.5em;
+	@media (--dark) {
+		--background-disabled: var(--base-700);
+		--color-disabled: var(--base-900);
 	}
 }
 
@@ -39,8 +39,8 @@
 	display: block;
 	background: var(--accent);
 	color: var(--color);
-	font-size: var(--size);
-	font-weight: var(--weight);
+	font-size: var(--font-size);
+	font-weight: var(--font-weight);
 	text-align: center;
 	text-decoration: none;
 	border: var(--border);
@@ -132,13 +132,13 @@ a:not(.btn) {
 
 :--button.disabled {
 	cursor: not-allowed;
-	background: var(--bg-disabled);
+	background: var(--background-disabled);
 	color: var(--color-disabled);
 
 	&.outline {
 		background-color: transparent;
-		color: var(--bg-disabled);
-		border-color: var(--bg-disabled);
+		color: var(--background-disabled);
+		border-color: var(--background-disabled);
 	}
 }
 
