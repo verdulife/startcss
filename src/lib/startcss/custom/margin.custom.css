@@ -1,0 +1,23 @@
+/* 
+          __             __                
+    _____/ /_____ ______/ /________________
+   / ___/ __/ __ `/ ___/ __/ ___/ ___/ ___/
+  (__  ) /_/ /_/ / /  / /_/ /__(__  |__  ) 
+ /____/\__/\__,_/_/   \__/\___/____/____/  v0.0.1 
+
+*/
+
+@import '../fonts/inter-variable.css';
+
+/* 🎨 custom properties 🎨 */
+
+:root {
+  --margin-xs: 0.25em;
+  --margin-sm: 0.5em;
+  --margin-md: 0.75em;
+  --margin-lg: 1em;
+  --margin-xl: 1.25em;
+  --margin-2xl: 1.5em;
+  --margin-3xl: 1.75em;
+  --margin-4xl: 2em;
+}

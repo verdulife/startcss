@@ -10,17 +10,19 @@
 /* 🎨 custom properties 🎨 */
 
 @import './⚡/⚡.palettes.css';
-@import './reset/⚡.base.css';
-@import './reset/⚡.breakpoints.css';
-@import './reset/⚡.button.css';
-@import './reset/⚡.code.css';
-@import './reset/⚡.font.css';
-@import './reset/⚡.heading.css';
-@import './reset/⚡.input.css';
-@import './reset/⚡.label.css';
-@import './reset/⚡.media.css';
-@import './reset/⚡.scroll.css';
-@import './reset/⚡.text.css';
+@import './custom/breakpoints.custom.css';
+@import './custom/font-size.custom.css';
+
+@import './components/⚡.base.css';
+@import './components/⚡.button.css';
+@import './components/⚡.code.css';
+@import './components/⚡.font.css';
+@import './components/⚡.heading.css';
+@import './components/⚡.input.css';
+@import './components/⚡.label.css';
+@import './components/⚡.media.css';
+@import './components/⚡.scroll.css';
+@import './components/⚡.text.css';
 
 /* ⚡ startcss reset ⚡ */
 
