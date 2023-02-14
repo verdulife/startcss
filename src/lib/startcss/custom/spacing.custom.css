@@ -12,12 +12,22 @@
 /* 🎨 custom properties 🎨 */
 
 :root {
-	--spaceing-xs: 0.25em;
-	--spaceing-sm: 0.5em;
-	--spaceing-md: 0.75em;
-	--spaceing-lg: 1em;
-	--spaceing-xl: 1.25em;
-	--spaceing-2xl: 1.5em;
-	--spaceing-3xl: 1.75em;
-	--spaceing-4xl: 2em;
+	--spacing-3xs: 0.25em;
+	--spacing-2xs: 0.5em;
+	--spacing-xs: 0.75em;
+	--spacing-sm: 1em;
+	--spacing-md: 1.25em;
+	--spacing-lg: 1.5em;
+	--spacing-xl: 1.75em;
+	--spacing-2xl: 2em;
+	--spacing-3xl: 2.5em;
+	--spacing-4xl: 4em;
+
+	--button-padding: var(--spacing-sm) var(--spacing-2xl);
+	--input-padding: var(--spacing-sm);
+
+	@media (--sm) {
+		--button-padding: var(--spacing-md) var(--spacing-3xl);
+		--input-padding: var(--spacing-md);
+	}
 }

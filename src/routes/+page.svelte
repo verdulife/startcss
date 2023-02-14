@@ -6,7 +6,7 @@
 	<Header />
 
 	<nav class="col acenter wfull">
-		<ul class="row fcenter wrap col@sm">
+		<ul class="row fcenter wrap">
 			<li class="col acenter">
 				<h2>🎨</h2>
 				Custom property first

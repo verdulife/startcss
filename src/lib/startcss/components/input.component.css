@@ -10,27 +10,6 @@
 @custom-selector :--input-ui [type='checkbox'], [type='radio'], [type='range'], progress;
 @custom-selector :--input input:not(:--input-ui), select, textarea;
 
-/* 🎨 custom properties 🎨 */
-
-:--input {
-	--bg: var(--base);
-	--color: var(--base-900);
-	--weight: normal;
-	--border: 1px solid var(--base-200);
-	--border-radius: 0.25em;
-	--inset-color-focus: inset 0 -10px 0 -6px var(--accent);
-	--placeholder-color: var(--base-500);
-	--placeholder-weight: normal;
-	--padding: 1em;
-
-	@media (--dark) {
-		--bg: var(--base-800);
-		--color: var(--base);
-		--border: 1px solid var(--base-700);
-		--placeholder-color: var(--base-600);
-	}
-}
-
 /* ⚡ startcss reset ⚡ */
 
 :--input {
@@ -38,7 +17,7 @@
 	border: 1px solid var(--base-200);
 	border-radius: 0.5em;
 	font-weight: normal;
-	padding: 1em;
+	padding: var(--input-padding);
 	transition: 150ms;
 
 	@media (--dark) {
@@ -53,10 +32,10 @@
 	}
 
 	&::placeholder {
-		color: var(--base-500);
+		color: var(--base-400);
 
 		@media (--dark) {
-			color: var(--base-600);
+			color: var(--base-500);
 		}
 	}
 }
@@ -64,10 +43,11 @@
 :--input:disabled {
 	cursor: not-allowed;
 	background: var(--base-200);
+	border-color: var(--base-300);
 
 	@media (--dark) {
 		background: var(--base-700);
-		color: var(--base-200);
+		border-color: var(--base-600);
 	}
 }
 

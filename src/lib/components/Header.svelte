@@ -55,6 +55,10 @@
 
 		& button {
 			max-width: 250px;
+
+			@media (--sm) {
+				max-width: none;
+			}
 		}
 	}
 

@@ -24,7 +24,7 @@
 	border-radius: 0.4em;
 	user-select: none;
 	-webkit-user-drag: none;
-	padding: 1em 2em;
+	padding: var(--button-padding);
 	transition: 150ms;
 
 	&:hover,
@@ -37,10 +37,6 @@
 		@media (--touch) {
 			filter: none;
 		}
-	}
-
-	@media (--sm) {
-		padding: 1.25em 2.25em;
 	}
 
 	&.outline {

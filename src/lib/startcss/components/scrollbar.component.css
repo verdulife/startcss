@@ -9,37 +9,32 @@
 
 @custom-selector :--button button, a.btn;
 
-/* 🎨 custom properties 🎨 */
-
-.scrollbar {
-	--width: 20px;
-	--bg: var(--base);
-	--color: var(--alt);
-	--border: 8px solid var(--bg);
-	--border-radius: 20px;
-
-	@media (--dark) {
-		--bg: var(--base-900);
-		--color: var(--accent);
-	}
-
-	@media (--touch) {
-		--width: 0;
-	}
-}
+/* ⚡ startcss reset ⚡ */
 
 .scrollbar {
 	&::-webkit-scrollbar {
-		width: var(--width);
+		width: 20px;
+
+		@media (--touch) {
+			--width: 0;
+		}
 	}
 
 	&::-webkit-scrollbar-track {
-		background-color: var(--bg);
+		background-color: var(--base);
+
+		@media (--dark) {
+			background-color: var(--base-900);
+		}
 	}
 
 	&::-webkit-scrollbar-thumb {
-		background-color: var(--color);
-		border: var(--border);
-		border-radius: var(--border-radius);
+		background-color: var(--alt);
+		border: 8px solid var(--base);
+		border-radius: 20px;
+
+		@media (--dark) {
+			background-color: var(--accent);
+		}
 	}
 }

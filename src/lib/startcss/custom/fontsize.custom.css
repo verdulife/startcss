@@ -18,8 +18,9 @@
 	--font-lg: clamp(22px, 5vw, 26px);
 	--font-xl: clamp(26px, 7vw, 30px);
 	--font-2xl: clamp(30px, 10vw, 60px);
+	--font-3xl: clamp(40px, 12vw, 80px);
 
-	--font-static-xxs: 0.5rem;
+	--font-static-2xs: 0.5rem;
 	--font-static-xs: 0.75rem;
 	--font-static-sm: 1rem;
 	--font-static-md: 1.1rem;

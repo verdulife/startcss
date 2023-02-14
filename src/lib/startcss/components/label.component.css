@@ -16,4 +16,14 @@ label {
 	&:has(+ :--input-ui) {
 		font-size: var(--font-sm);
 	}
+
+	&::selection {
+		background-color: var(--alt);
+		color: var(--base-100);
+
+		@media (--dark) {
+			background-color: var(--accent);
+			color: var(--base-800);
+		}
+	}
 }
