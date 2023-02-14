@@ -9,9 +9,10 @@
 
 /* 🎨 custom properties 🎨 */
 
-@import './⚡/⚡.palettes.css';
+/* @import './⚡/⚡.palettes.css'; */
 
 @import './custom/breakpoint.custom.css';
+@import './custom/colors.custom.css';
 @import './custom/fontsize.custom.css';
 @import './custom/fontfamily.custom.css';
 @import './custom/spacing.custom.css';
