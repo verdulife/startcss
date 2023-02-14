@@ -23,12 +23,20 @@
 
 :root {
 	@for $i from 1 to 9 {
-		--base-$(i)00: hsl(0, 0%, $(i) 0%);
-		--base-$(i)00-hsl: 0, 0%, $(i) 0%;
+		--base-hsl: 0, 0%, 98%;
+		--base-$(i)00: hsl(0, 0%, calc(100% - $(i)0%));
+		--base-$(i)00-hsl: 0, 0%, calc(100% - $(i)0%);
 	}
 
 	@for $i from 1 to 9 {
-		--accent-$(i)00: hsl(0, 0%, $(i) 0%);
-		--accent-$(i)00-hsl: 0, 0%, $(i) 0%;
+		--accent-hsl: 44, 100%, 68%;
+		--accent-$(i)00: hsl(44, 100%, calc(100% - $(i)0%));
+		--accent-$(i)00-hsl: 44, 100%, calc(100% - $(i)0%);
+	}
+
+	@for $i from 1 to 9 {
+		--alt-hsl: 218, 88%, 13%;
+		--alt-$(i)00: hsl(218, 88%, calc(100% - $(i)0%));
+		--alt-$(i)00-hsl: 218, 88%, calc(100% - $(i)0%);
 	}
 }

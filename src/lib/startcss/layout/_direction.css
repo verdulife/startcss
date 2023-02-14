@@ -32,7 +32,45 @@
 	flex-wrap: wrap;
 }
 
-@media (--sm) {
+@each $media in sm, md, lg, xl, xxl {
+	@media (--$(media)) {
+		.row\@$(media) {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+		.row-reverse\@$(media) {
+			display: flex;
+			flex-flow: row-reverse nowrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+		
+		.col\@$(media) {
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+		.col-reverse\@$(media) {
+			display: flex;
+			flex-flow: column-reverse nowrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+		
+		.nowrap\@$(media) {
+			flex-wrap: nowrap;
+			overflow: hidden;
+		}
+		.wrap\@$(media) {
+			flex-wrap: wrap;
+		}
+	}
+}
+
+/* @media (--sm) {
 	.row\@sm {
 		display: flex;
 		flex-flow: row nowrap;
@@ -66,9 +104,9 @@
 	.wrap\@sm {
 		flex-wrap: wrap;
 	}
-}
+}  */
 
-@media (--md) {
+/* @media (--md) {
 	.row\@md {
 		display: flex;
 		flex-flow: row nowrap;
@@ -211,3 +249,4 @@
 		flex-wrap: wrap;
 	}
 }
+ */

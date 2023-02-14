@@ -9,29 +9,23 @@
 
 /* 🎨 custom properties 🎨 */
 
-/* @import './⚡/⚡.palettes.css'; */
-
 @import './custom/breakpoint.custom.css';
 @import './custom/colors.custom.css';
 @import './custom/fontsize.custom.css';
 @import './custom/fontfamily.custom.css';
 @import './custom/spacing.custom.css';
 
+/* ⚡ startcss reset ⚡ */
+
 @import './components/base.component.css';
 @import './components/scrollbar.component.css';
-
 @import './components/anchor.component.css';
 @import './components/button.component.css';
-
 @import './components/text.component.css';
 @import './components/heading.component.css';
 @import './components/code.component.css';
-
 @import './components/input.component.css';
 @import './components/label.component.css';
-
 @import './components/media.component.css';
 
-/* ⚡ startcss reset ⚡ */
-
-@import './⚡/layout/layout.css';
+@import './layout/layout.css';
