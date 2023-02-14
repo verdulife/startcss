@@ -9,14 +9,12 @@
 
 	<aside class="row fcenter wfull col@md">
 		<button class="w1/2 wfull@sm">Get started</button>
-		<button class="base w1/2 wfull@sm">!Framework</button>
 	</aside>
 
-	<small class="row fcenter wrap">
-		This two buttons are only <pre>{'<button>Get started</button>'}</pre>
-		&
-		<pre>{'<button class="base">!Framework</button>'}</pre>
-	</small>
+	<footer class="col acenter">
+		<small>This button is only</small>
+		<pre><b>{'<button>'}</b>Get started<b>{'</button>'}</b></pre>
+	</footer>
 
 	<div class="gradient row wfull h1/2" />
 </header>
@@ -54,12 +52,16 @@
 		gap: 0.5em;
 
 		& button {
-			max-width: 250px;
+			max-width: 200px;
 
 			@media (--sm) {
-				max-width: none;
+				max-width: 70%;
 			}
 		}
+	}
+
+	footer {
+		gap: var(--spacing-2xs);
 	}
 
 	small {

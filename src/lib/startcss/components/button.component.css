@@ -14,14 +14,15 @@
 :--button {
 	cursor: pointer;
 	display: block;
-	background-color: var(--accent);
-	color: var(--base-900);
-	font-size: var(--font-sm);
+	background-color: hsl(var(--base-hsl), 0.05);
+	backdrop-filter: blur(5px);
+	color: var(--accent);
+	font-size: var(--font-xs);
 	font-weight: bold;
 	text-align: center;
 	text-decoration: none;
-	border: 2px solid transparent;
-	border-radius: 0.4em;
+	border: 1px solid hsl(var(--base-hsl), 0.05);
+	border-radius: 0.6em;
 	user-select: none;
 	-webkit-user-drag: none;
 	padding: var(--button-padding);
@@ -29,14 +30,7 @@
 
 	&:hover,
 	&:focus {
-		filter: brightness(0.9);
-
-		@media (--dark) {
-			filter: brightness(0.8);
-		}
-		@media (--touch) {
-			filter: none;
-		}
+		background-color: hsl(var(--base-hsl), 0.1);
 	}
 
 	&.outline {
@@ -58,68 +52,5 @@
 
 	&.outline {
 		color: var(--base-700);
-	}
-}
-
-:--button.base {
-	background-color: var(--base-900);
-	color: var(--base);
-
-	@media (--dark) {
-		background-color: var(--base);
-		color: var(--base-900);
-	}
-
-	&.outline {
-		color: var(--base-900);
-
-		@media (--dark) {
-			color: var(--base);
-		}
-	}
-}
-
-:--button.alt {
-	background-color: var(--alt);
-	color: var(--base);
-
-	&.outline {
-		color: var(--alt);
-	}
-}
-
-:--button.info {
-	background-color: var(--info);
-	color: var(--base);
-
-	&.outline {
-		color: var(--info);
-	}
-}
-
-:--button.success {
-	background-color: var(--success);
-	color: var(--base);
-
-	&.outline {
-		color: var(--success);
-	}
-}
-
-:--button.warning {
-	background-color: var(--warning);
-	color: var(--base-900);
-
-	&.outline {
-		color: var(--warning);
-	}
-}
-
-:--button.error {
-	background-color: var(--error);
-	color: var(--base);
-
-	&.outline {
-		color: var(--error);
 	}
 }

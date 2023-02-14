@@ -6,24 +6,24 @@
 	<Header />
 
 	<nav class="col acenter wfull">
-		<ul class="row fcenter wrap">
-			<li class="col acenter">
+		<ul class="row jevenly wrap wfull">
+			<li class="col acenter wauto w1/2@sm">
 				<h2>🎨</h2>
 				Custom property first
 			</li>
-			<li class="col acenter">
+			<li class="col acenter w1/2@sm">
 				<h2>⚡</h2>
 				Fast prototyping
 			</li>
-			<li class="col acenter">
+			<li class="col acenter w1/2@sm">
 				<h2>🎯</h2>
 				Super scalable
 			</li>
-			<li class="col acenter">
+			<li class="col acenter w1/2@sm">
 				<h2>🤯</h2>
 				Reset based
 			</li>
-			<li class="col acenter">
+			<li class="col acenter w1/2@sm">
 				<h2>🚀</h2>
 				Layout classes
 			</li>
@@ -33,7 +33,6 @@
 
 <style lang="postcss">
 	ul {
-		gap: 4em;
 		padding: 2em;
 	}
 

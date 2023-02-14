@@ -22,9 +22,11 @@
 /* ⚡ startcss reset ⚡ */
 
 :--code {
-	background: hsl(var(--base-900-hsl), 0.7);
-  color: turquoise;
-  border: 1px solid hsl(var(--base-500-hsl), 0.3);
-	border-radius: 0.5em;
-	padding: 0.5em 1em;
+	color: var(--accent);
+	font-size: var(--font-md);
+	padding: var(--label-padding);
+
+	& > b {
+		color: var(--base-400);
+	}
 }

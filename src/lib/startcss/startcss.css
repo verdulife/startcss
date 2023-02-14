@@ -24,7 +24,7 @@
 
 @import './components/text.component.css';
 @import './components/heading.component.css';
-@import './components/_code.component.css';
+@import './components/code.component.css';
 
 @import './components/input.component.css';
 @import './components/label.component.css';
