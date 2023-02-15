@@ -14,23 +14,21 @@
 .scrollbar {
 	&::-webkit-scrollbar {
 		width: 20px;
+		background-color: transparent;
 
 		@media (--touch) {
-			--width: 0;
+			width: 0;
 		}
 	}
 
 	&::-webkit-scrollbar-track {
-		background-color: var(--base);
-
-		@media (--dark) {
-			background-color: var(--base-900);
-		}
+		background-color: transparent;
 	}
 
 	&::-webkit-scrollbar-thumb {
 		background-color: var(--alt);
-		border: 8px solid var(--base);
+		background-clip: padding-box;
+		border: 6px solid transparent;
 		border-radius: 20px;
 
 		@media (--dark) {
