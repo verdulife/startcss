@@ -32,7 +32,7 @@
 	flex-wrap: wrap;
 }
 
-@each $media in sm, md, lg, xl, xxl {
+@each $media in sm, md, lg, xl, 2xl {
 	@media (--$(media)) {
 		.row\@$(media) {
 			display: flex;

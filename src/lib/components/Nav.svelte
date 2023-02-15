@@ -43,7 +43,8 @@
 		background-color: hsl(var(--base-900-hsl), 0.2);
 		backdrop-filter: blur(6px);
 		border-bottom: 1px solid hsl(var(--base-400-hsl), 0.1);
-		padding: 1.5em;
+		padding: calc(var(--safe-top) + 1.5em) calc(var(--safe-right) + 1.5em) 1.5em
+			calc(var(--safe-left) + 1.5em);
 		z-index: 9;
 	}
 

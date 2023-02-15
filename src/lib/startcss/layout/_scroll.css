@@ -44,242 +44,52 @@
 	scroll-snap-stop: always;
 }
 
-@media (--sm) {
-  .scrollbar\@sm {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-  }
-  .scrollbar\@sm.snap {
-    scroll-snap-type: y mandatory;
-  
-    & > * {
-      scroll-snap-align: start;
-      scroll-snap-stop: always;
-    }
-  }
-  
-  .scrollbar[horizontal\@sm] {
-    position: relative;
-    width: 100%;
-    display: block;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-  .scrollbar[horizontal\@sm] > * {
-    display: inline-flex;
-    white-space: normal;
-  }
-  .scrollbar[horizontal\@sm].snap {
-    scroll-snap-type: x mandatory;
-  }
-  .scrollbar[horizontal\@sm].snap > * {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-  }
-}
+@each $media in sm, md, lg, xl, 2xl {
+	@media (--$(media)) {
+		.scrollbar\@$(media) {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			overflow-x: hidden;
+			overflow-y: auto;
+			scroll-behavior: smooth;
+			-webkit-overflow-scrolling: touch;
+		}
+		.scrollbar\@$(media).snap {
+			scroll-snap-type: y mandatory;
 
-@media (--md) {
-  .scrollbar\@md {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-  }
-  .scrollbar\@md.snap {
-    scroll-snap-type: y mandatory;
-  
-    & > * {
-      scroll-snap-align: start;
-      scroll-snap-stop: always;
-    }
-  }
-  
-  .scrollbar[horizontal\@md] {
-    position: relative;
-    width: 100%;
-    display: block;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-  .scrollbar[horizontal\@md] > * {
-    display: inline-flex;
-    white-space: normal;
-  }
-  .scrollbar[horizontal\@md].snap {
-    scroll-snap-type: x mandatory;
-  }
-  .scrollbar[horizontal\@md].snap > * {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-  }
-}
+			& > * {
+				scroll-snap-align: start;
+				scroll-snap-stop: always;
+			}
+		}
 
-@media (--lg) {
-  .scrollbar\@lg {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-  }
-  .scrollbar\@lg.snap {
-    scroll-snap-type: y mandatory;
-  
-    & > * {
-      scroll-snap-align: start;
-      scroll-snap-stop: always;
-    }
-  }
-  
-  .scrollbar[horizontal\@lg] {
-    position: relative;
-    width: 100%;
-    display: block;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-  .scrollbar[horizontal\@lg] > * {
-    display: inline-flex;
-    white-space: normal;
-  }
-  .scrollbar[horizontal\@lg].snap {
-    scroll-snap-type: x mandatory;
-  }
-  .scrollbar[horizontal\@lg].snap > * {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-  }
-}
+		.scrollbar[horizontal\@$(media)] {
+			position: relative;
+			width: 100%;
+			display: block;
+			overflow-x: auto;
+			overflow-y: hidden;
+			white-space: nowrap;
+			scroll-behavior: smooth;
+			-webkit-overflow-scrolling: touch;
+			-ms-overflow-style: none;
+			scrollbar-width: none;
 
-@media (--xl) {
-  .scrollbar\@xl {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-  }
-  .scrollbar\@xl.snap {
-    scroll-snap-type: y mandatory;
-  
-    & > * {
-      scroll-snap-align: start;
-      scroll-snap-stop: always;
-    }
-  }
-  
-  .scrollbar[horizontal\@xl] {
-    position: relative;
-    width: 100%;
-    display: block;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-  .scrollbar[horizontal\@xl] > * {
-    display: inline-flex;
-    white-space: normal;
-  }
-  .scrollbar[horizontal\@xl].snap {
-    scroll-snap-type: x mandatory;
-  }
-  .scrollbar[horizontal\@xl].snap > * {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-  }
-}
-
-@media (--xxl) {
-  .scrollbar\@xxl {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-  }
-  .scrollbar\@xxl.snap {
-    scroll-snap-type: y mandatory;
-  
-    & > * {
-      scroll-snap-align: start;
-      scroll-snap-stop: always;
-    }
-  }
-  
-  .scrollbar[horizontal\@xxl] {
-    position: relative;
-    width: 100%;
-    display: block;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-  .scrollbar[horizontal\@xxl] > * {
-    display: inline-flex;
-    white-space: normal;
-  }
-  .scrollbar[horizontal\@xxl].snap {
-    scroll-snap-type: x mandatory;
-  }
-  .scrollbar[horizontal\@xxl].snap > * {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-  }
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
+		.scrollbar[horizontal\@$(media)] > * {
+			display: inline-flex;
+			white-space: normal;
+		}
+		.scrollbar[horizontal\@$(media)].snap {
+			scroll-snap-type: x mandatory;
+		}
+		.scrollbar[horizontal\@$(media)].snap > * {
+			scroll-snap-align: start;
+			scroll-snap-stop: always;
+		}
+	}
 }
