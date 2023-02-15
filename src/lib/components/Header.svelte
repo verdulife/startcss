@@ -16,15 +16,13 @@
 		<pre><b>{'<button>'}</b>Get started<b>{'</button>'}</b></pre>
 	</footer>
 
-	<div class="gradient row wfull h1/2" />
+	<div class="gradient row full" />
 </header>
 
 <style lang="postcss">
 	header {
 		position: relative;
-		min-height: calc(300vh / 4);
-		gap: 2em;
-		padding: clamp(150px, 20%, 20%) 2em 10% 2em;
+		padding: clamp(120px, 12%, 16%) 2em 6% 2em;
 
 		& *:not(figure) {
 			z-index: 2;
@@ -39,17 +37,17 @@
 		& span {
 			position: absolute;
 			inset: 0;
-			background-color: hsl(var(--base-900-hsl), 0.8);
 			mix-blend-mode: multiply;
 		}
 	}
 
 	p {
+		margin-top: 0.5em;
 		font-size: var(--font-md);
 	}
 
 	aside {
-		gap: 0.5em;
+		margin-top: 4em;
 
 		& button {
 			max-width: 200px;
@@ -61,18 +59,15 @@
 	}
 
 	footer {
-		gap: var(--spacing-2xs);
-	}
-
-	small {
-		gap: 0.5em;
+		margin-top: 4em;
 	}
 
 	.gradient {
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		background: linear-gradient(to top, var(--base-900), hsl(var(--base-900-hsl), 0));
+		background: radial-gradient(ellipse at top, hsl(var(--base-900-hsl), 0), var(--base-900)),
+			linear-gradient(to bottom, hsl(var(--base-900-hsl), 0), var(--base-900) 90%);
 		z-index: 1;
 	}
 </style>

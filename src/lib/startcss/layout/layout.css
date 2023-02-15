@@ -4,3 +4,7 @@
 @import './_sizing.css';
 @import './_dividers.css';
 @import './_text.css';
+
+.debug {
+	border: 1px solid red;
+}

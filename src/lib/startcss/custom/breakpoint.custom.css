@@ -22,6 +22,8 @@
 @custom-media --lg (width <= 1024px);
 @custom-media --xl (width <= 1280px);
 @custom-media --xxl (width <= 1536px);
+@custom-media --portrait (orientation: portrait);
+@custom-media --landscape (orientation: landscape);
 
 /* ⚡ startcss reset ⚡ */
 
